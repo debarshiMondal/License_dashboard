@@ -1,0 +1,20 @@
+ cat user.full-ORG
+select count(id) from user  where  isactive = true  and profile.name in ('Cadence General User Lightning','4_4 - Apttus Lightning')
+[codedev@vlsj-deploybox soqlDir]$ 
+[codedev@vlsj-deploybox soqlDir]$ 
+[codedev@vlsj-deploybox soqlDir]$ cat userlicense.full
+select
+NAME,
+TOTALLICENSES,
+USEDLICENSES
+FROM UserLicense where name in ('Salesforce','Salesforce Platform','Force.com - App Subscription','Customer Community')
+[codedev@vlsj-deploybox soqlDir]$ 
+[codedev@vlsj-deploybox soqlDir]$ 
+[codedev@vlsj-deploybox soqlDir]$ cat user.full-ORG
+select count(id) from user  where  isactive = true  and profile.name in ('Cadence General User Lightning','4_4 - Apttus Lightning')
+[codedev@vlsj-deploybox soqlDir]$ 
+[codedev@vlsj-deploybox soqlDir]$ cd ../soqlDir_2/
+[codedev@vlsj-deploybox soqlDir_2]$ 
+[codedev@vlsj-deploybox soqlDir_2]$ ls
+user.full
+[codedev@vlsj-deploybox soqlDir_2]$ cat user.full
