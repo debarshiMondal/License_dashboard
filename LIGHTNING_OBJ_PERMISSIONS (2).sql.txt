@@ -1,0 +1,52 @@
+  CREATE OR REPLACE FORCE EDITIONABLE VIEW "VIEW_LIGHTNING_OBJ_PERMISSIONS" ("ID", "USERNAME", "NAME", "EMAIL", "PROFILEID", "PERMISSIONSETID", "SOBJECTTYPE", "PCREATE", "PREAD", "PEDIT", "PDELETE", "PVIEWALL", "PMODIFYALL") AS 
+  SELECT /*+ parallel 8 */ usr.ID,usr.username,usr.name,usr.email,usr.profileid,Permissionsetid, sobjecttype,
+max(permissionscreate) as pcreate, max(permissionsread) as pread,
+max(permissionsedit) as pedit, max(permissionsdelete) as pdelete,
+max(permissionsviewallrecords) as pviewall,
+max(permissionsmodifyallrecords) as pmodifyall
+FROM PERMISSIONSETASSIGNMENT psa
+LEFT OUTER JOIN users usr ON psa.assigneeID = usr.ID 
+ LEFT OUTER JOIN OBJECTPERMISSIONS obj    ON psa.Permissionsetid = obj.parentid
+ WHERE USERNAME IS NOT NULL and PROFILEID in ('00e3w000002Nh0kAAC','00e3w000002Nh0pAAC')
+AND SOBJECTTYPE NOT LIKE 'AutomationEdge__%'
+AND SOBJECTTYPE NOT LIKE 'CoveoV2__%'
+AND SOBJECTTYPE NOT LIKE 'relateiq__%'
+AND SOBJECTTYPE NOT LIKE 'docebo_v3__%'
+AND SOBJECTTYPE NOT LIKE 'CodeCReport__%'
+AND SOBJECTTYPE NOT LIKE 'sf_com_apps__%'
+AND SOBJECTTYPE NOT LIKE 'sf_chttr_apps__%'
+AND SOBJECTTYPE NOT LIKE 'Apttus_CPQAdmin__%'
+AND SOBJECTTYPE NOT LIKE 'SFGA__%'
+AND SOBJECTTYPE NOT LIKE 'sfadminapps__%'
+AND SOBJECTTYPE NOT LIKE 'Apttus__%'
+AND SOBJECTTYPE NOT LIKE 'Apttus_QPConfig__%'
+AND SOBJECTTYPE NOT LIKE 'OIQ__%'
+AND SOBJECTTYPE NOT LIKE 'APXTConga4__%'
+AND SOBJECTTYPE NOT LIKE 'Apttus_XAAdmin__%'
+AND SOBJECTTYPE NOT LIKE 'Apttus_Base2__%'
+AND SOBJECTTYPE NOT LIKE 'Apttus_Approval__%'
+AND SOBJECTTYPE NOT LIKE 'mkto2__%'
+AND SOBJECTTYPE NOT LIKE 'APXT_CMQM__%'
+AND SOBJECTTYPE NOT LIKE 'Apttus_Proposal__%'
+AND SOBJECTTYPE NOT LIKE 'SVMXC__%'
+AND SOBJECTTYPE NOT LIKE 'echosign_dev1__%'
+AND SOBJECTTYPE NOT LIKE 'mkto_si__%'
+AND SOBJECTTYPE NOT LIKE 'al__%'
+AND SOBJECTTYPE NOT LIKE 'Apttus_Echosign__%'
+AND SOBJECTTYPE NOT LIKE 'dupe_eliminator__%'
+AND SOBJECTTYPE NOT LIKE 'APXT_BPM__%'
+AND SOBJECTTYPE NOT LIKE 'Apttus_Config2__%'
+AND SOBJECTTYPE NOT LIKE 'Field_Trip__%'
+AND SOBJECTTYPE NOT LIKE 'Apttus_CMConfig__%'
+AND SOBJECTTYPE NOT LIKE 'Apttus_QPComply__%'
+AND SOBJECTTYPE NOT LIKE 'Apttus_CPQApi__%'
+AND SOBJECTTYPE NOT LIKE 'Apttus_DocGen__%'
+AND SOBJECTTYPE NOT LIKE 'Apttus_QPApprov__%'
+AND SOBJECTTYPE NOT LIKE 'Apttus_QPESign__%'
+AND SOBJECTTYPE NOT LIKE 'Apttus_XApps__%'
+AND SOBJECTTYPE NOT LIKE 'Apttus_CQApprov__%'
+AND SOBJECTTYPE NOT LIKE 'Apttus_XAppsDS__%'
+AND SOBJECTTYPE NOT LIKE 'Apttus_XADocGen__%'
+AND SOBJECTTYPE LIKE '%__c'
+ GROUP BY usr.ID,usr.username,usr.name,usr.email,usr.profileid, Permissionsetid,sobjecttype
+;

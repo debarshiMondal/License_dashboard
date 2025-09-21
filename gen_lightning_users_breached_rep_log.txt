@@ -1,0 +1,1295 @@
+wcoratstdbl02:sfmon:/usr/orasys/work/jsaini/LIGHTNING_2021>/usr/orasys/work/jsaini/LIGHTNING_2021/gen_lightning_users_breached_rep.sh
+The Oracle base remains unchanged with value /usr/orasys/app/oracle/sfmon
+The Oracle base remains unchanged with value /usr/orasys/app/oracle/sfmon
+----------------------------------------------------------------------------
+Loading users Object data in Oracle Database
+Mon Nov  8 20:25:04 PST 2021
+-rw-r--r-- 1 oracle dba 8813043 Nov  8 00:11 /usr/orasys/work/jsaini/LIGHTNING_2021/users.csv
+-rw-r--r-- 1 oracle dba 8813043 Nov  8 20:25 /usr/orasys/work/jsaini/LIGHTNING_2021/users/users.csv
+ >>>>>  Truncate table users <<<<<<<
+
+  COUNT(*)
+----------
+      8210
+
+
+Table truncated.
+
+
+  COUNT(*)
+----------
+         0
+
+0
+----------------------------------------------------------------------------
+ >>>>>  Loading users object data <<<<<<<
+sqlldr sfprod21/sfprod21 /usr/orasys/work/jsaini/LIGHTNING_2021/users/users_conrolfile.ctl silent=FEEDBACK errors=5000 LOG=/usr/orasys/work/jsaini/LIGHTNING_2021/users/load_users_data.log ROWS=128 readsize=6553600
+
+SQL*Loader: Release 12.2.0.1.0 - Production on Mon Nov 8 20:25:04 2021
+
+Copyright (c) 1982, 2017, Oracle and/or its affiliates.  All rights reserved.
+
+
+  8210 Rows successfully loaded.
+----------------------------------------------------------------------------
+ >>>>>  Count object in users table <<<<<<<
+
+  COUNT(*)
+----------
+      8210
+
+
+The Oracle base remains unchanged with value /usr/orasys/app/oracle/sfmon
+----------------------------------------------------------------------------
+Loading ObjectPermissions Object data in Oracle Database
+Mon Nov  8 20:25:08 PST 2021
+-rw-r--r-- 1 oracle dba 9291049 Nov  8 00:11 /usr/orasys/work/jsaini/LIGHTNING_2021/ObjectPermissions.csv
+-rw-r--r-- 1 oracle dba 9291049 Nov  8 20:25 /usr/orasys/work/jsaini/LIGHTNING_2021/ObjectPermissions/ObjectPermissions.csv
+ >>>>>  Truncate table ObjectPermissions <<<<<<<
+
+  COUNT(*)
+----------
+     38918
+
+
+Table truncated.
+
+
+  COUNT(*)
+----------
+         0
+
+0
+----------------------------------------------------------------------------
+ >>>>>  Loading ObjectPermissions object data <<<<<<<
+sqlldr sfprod21/sfprod21 /usr/orasys/work/jsaini/LIGHTNING_2021/ObjectPermissions/ObjectPermissions_conrolfile.ctl silent=FEEDBACK errors=5000 LOG=/usr/orasys/work/jsaini/LIGHTNING_2021/ObjectPermissions/load_ObjectPermissions_data.log ROWS=128 readsize=6553600
+
+SQL*Loader: Release 12.2.0.1.0 - Production on Mon Nov 8 20:25:08 2021
+
+Copyright (c) 1982, 2017, Oracle and/or its affiliates.  All rights reserved.
+
+
+  38918 Rows successfully loaded.
+----------------------------------------------------------------------------
+ >>>>>  Count object in ObjectPermissions table <<<<<<<
+
+  COUNT(*)
+----------
+     38918
+
+
+The Oracle base remains unchanged with value /usr/orasys/app/oracle/sfmon
+----------------------------------------------------------------------------
+Loading PermissionSetAssignment Object data in Oracle Database
+Mon Nov  8 20:25:11 PST 2021
+-rw-r--r-- 1 oracle dba 26661653 Nov  8 00:11 /usr/orasys/work/jsaini/LIGHTNING_2021/PermissionSetAssignment.csv
+-rw-r--r-- 1 oracle dba 26661653 Nov  8 20:25 /usr/orasys/work/jsaini/LIGHTNING_2021/PermissionSetAssignment/PermissionSetAssignment.csv
+ >>>>>  Truncate table PermissionSetAssignment <<<<<<<
+
+  COUNT(*)
+----------
+    296241
+
+
+Table truncated.
+
+
+  COUNT(*)
+----------
+         0
+
+0
+----------------------------------------------------------------------------
+ >>>>>  Loading PermissionSetAssignment object data <<<<<<<
+sqlldr sfprod21/sfprod21 /usr/orasys/work/jsaini/LIGHTNING_2021/PermissionSetAssignment/PermissionSetAssignment_conrolfile.ctl silent=FEEDBACK errors=5000 LOG=/usr/orasys/work/jsaini/LIGHTNING_2021/PermissionSetAssignment/load_PermissionSetAssignment_data.log ROWS=128 readsize=6553600
+
+SQL*Loader: Release 12.2.0.1.0 - Production on Mon Nov 8 20:25:11 2021
+
+Copyright (c) 1982, 2017, Oracle and/or its affiliates.  All rights reserved.
+
+
+  296241 Rows successfully loaded.
+----------------------------------------------------------------------------
+ >>>>>  Count object in PermissionSetAssignment table <<<<<<<
+
+  COUNT(*)
+----------
+    296241
+
+
+The Oracle base remains unchanged with value /usr/orasys/app/oracle/sfmon
+----------------------------------------------------------------------------
+Loading PermissionSet Object data in Oracle Database
+Mon Nov  8 20:25:17 PST 2021
+-rw-r--r-- 1 oracle dba 644385 Nov  8 00:11 /usr/orasys/work/jsaini/LIGHTNING_2021/PermissionSet.csv
+-rw-r--r-- 1 oracle dba 644385 Nov  8 20:25 /usr/orasys/work/jsaini/LIGHTNING_2021/PermissionSet/PermissionSet.csv
+ >>>>>  Truncate table PermissionSet <<<<<<<
+
+  COUNT(*)
+----------
+       407
+
+
+Table truncated.
+
+
+  COUNT(*)
+----------
+         0
+
+0
+----------------------------------------------------------------------------
+ >>>>>  Loading PermissionSet object data <<<<<<<
+sqlldr sfprod21/sfprod21 /usr/orasys/work/jsaini/LIGHTNING_2021/PermissionSet/PermissionSet_conrolfile.ctl silent=FEEDBACK errors=5000 LOG=/usr/orasys/work/jsaini/LIGHTNING_2021/PermissionSet/load_PermissionSet_data.log ROWS=128 readsize=6553600
+
+SQL*Loader: Release 12.2.0.1.0 - Production on Mon Nov 8 20:25:17 2021
+
+Copyright (c) 1982, 2017, Oracle and/or its affiliates.  All rights reserved.
+
+
+  407 Rows successfully loaded.
+----------------------------------------------------------------------------
+ >>>>>  Count object in PermissionSet table <<<<<<<
+
+  COUNT(*)
+----------
+       407
+
+
+The Oracle base remains unchanged with value /usr/orasys/app/oracle/sfmon
+----------------------------------------------------------------------------
+Loading UserLicenses Object data in Oracle Database
+Mon Nov  8 20:25:18 PST 2021
+-rw-r--r-- 1 oracle dba 3588 Nov  8 00:11 /usr/orasys/work/jsaini/LIGHTNING_2021/UserLicenses.csv
+-rw-r--r-- 1 oracle dba 3588 Nov  8 20:25 /usr/orasys/work/jsaini/LIGHTNING_2021/UserLicenses/UserLicenses.csv
+ >>>>>  Truncate table UserLicenses <<<<<<<
+
+  COUNT(*)
+----------
+        18
+
+
+Table truncated.
+
+
+  COUNT(*)
+----------
+         0
+
+0
+----------------------------------------------------------------------------
+ >>>>>  Loading UserLicenses object data <<<<<<<
+sqlldr sfprod21/sfprod21 /usr/orasys/work/jsaini/LIGHTNING_2021/UserLicenses/UserLicenses_conrolfile.ctl silent=FEEDBACK errors=5000 LOG=/usr/orasys/work/jsaini/LIGHTNING_2021/UserLicenses/load_UserLicenses_data.log ROWS=128 readsize=6553600
+
+SQL*Loader: Release 12.2.0.1.0 - Production on Mon Nov 8 20:25:18 2021
+
+Copyright (c) 1982, 2017, Oracle and/or its affiliates.  All rights reserved.
+
+
+  18 Rows successfully loaded.
+----------------------------------------------------------------------------
+ >>>>>  Count object in UserLicenses table <<<<<<<
+
+  COUNT(*)
+----------
+        18
+
+
+The Oracle base remains unchanged with value /usr/orasys/app/oracle/sfmon
+----------------------------------------------------------------------------
+Loading Profiles Object data in Oracle Database
+Mon Nov  8 20:25:18 PST 2021
+-rw-r--r-- 1 oracle dba 192786 Nov  8 00:11 /usr/orasys/work/jsaini/LIGHTNING_2021/Profiles.csv
+-rw-r--r-- 1 oracle dba 192786 Nov  8 20:25 /usr/orasys/work/jsaini/LIGHTNING_2021/Profiles/Profiles.csv
+OBJ_LIGHTNING_HOME=/usr/orasys/work/jsaini/LIGHTNING_2021/Profiles
+LIGHTNING_HOME=/usr/orasys/work/jsaini/LIGHTNING_2021
+ >>>>>  Truncate table Profiles <<<<<<<
+
+  COUNT(*)
+----------
+       121
+
+
+Table truncated.
+
+
+  COUNT(*)
+----------
+         0
+
+0
+----------------------------------------------------------------------------
+ >>>>>  Loading Profiles object data <<<<<<<
+sqlldr sfprod21/sfprod21 /usr/orasys/work/jsaini/LIGHTNING_2021/Profiles/Profiles_conrolfile.ctl silent=FEEDBACK errors=5000 LOG=/usr/orasys/work/jsaini/LIGHTNING_2021/Profiles/load_Profiles_data.log ROWS=128 readsize=6553600
+
+SQL*Loader: Release 12.2.0.1.0 - Production on Mon Nov 8 20:25:18 2021
+
+Copyright (c) 1982, 2017, Oracle and/or its affiliates.  All rights reserved.
+
+
+  121 Rows successfully loaded.
+----------------------------------------------------------------------------
+ >>>>>  Count object in Profiles table <<<<<<<
+
+  COUNT(*)
+----------
+       121
+
+
+
+View created.
+
+
+View created.
+
+
+View created.
+
+
+View created.
+
+
+View created.
+
+
+View created.
+
+
+View created.
+
+
+View created.
+
+
+View created.
+
+
+"ID"|"USERNAME"|"NAME"|"PROFILEID"|"PROFILENAME"|"PROFILETYPE"|"OBJECTBREACHED"|"PERMISSIONBREACHED"
+"005d0000001T3d9AAC"|"claude@cadence.com"|"Claude Beauregard"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3Z3AAK"|"kurumi@cadence.com"|"Yoshikazu Kurumisawa"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3BMAA0"|"dnguyen@cadence.com"|"Duy Nguyen"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007BMIXQA4"|"bekkala@cadence.com"|"Michael Bekkala"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008InMyAAK"|"thanhn@cadence.com"|"Thanh Nguyen"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008Xh8CAAS"|"shivanib@cadence.com"|"Shivani Bhatia"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3jsAAC"|"fukasawa@cadence.com"|"Katsuhiro Fukasawa"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T38xAAC"|"johnag@cadence.com"|"John Goelz"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008bEtHAAU"|"surajt@cadence.com"|"Suraj Tandale"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000006WJIXQA4"|"carll@cadence.com"|"Carl Liao"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007QKptQAG"|"sruthyjl@cadence.com"|"Sruthy J L"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000007xghiAAA"|"smachha@cadence.com"|"Sunil Kumar Machha"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000006mGQaQAM"|"taohongw@cadence.com"|"Taohong Wang"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000007y6f4AAA"|"mallang@cadence.com"|"Mallan Gouda"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000000q5hRAAQ"|"paulshin@cadence.com"|"Paul Shin"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T4WKAA0"|"sharaths@cadence.com"|"Sharath Siddappa"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3JYAA0"|"colinsc@cadence.com"|"Colin Scott"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000008L2TeQAK"|"jxiao@cadence.com"|"Jie Xiao"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d000000440SfAAI"|"sriks@cadence.com"|"Srikanth M S"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007d1hNQAQ"|"minh@cadence.com"|"Minh Ho"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T36LAAS"|"kahn@cadence.com"|"Suzanne Kahn"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000005qQaXAAU"|"anindita@cadence.com"|"Anindita :"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000005qX6pAAE"|"dpowell@cadence.com"|"Denise Powell"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007HZSrQAO"|"vivekkum@cadence.com"|"Vivek Kumar"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d000000355qqAAA"|"jckim@cadence.com"|"JC Kim"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007cYPoQAM"|"jalves@cadence.com"|"Joao Victor Alves"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007HEyIQAW"|"hodha@cadence.com"|"Ho Ha"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3PRAA0"|"sharvey@cadence.com"|"Steve Harvey"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008lUHJAA2"|"krishna5@cadence.com"|"Krishnan Ramakrishnan"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000002pXAyAAM"|"shanmukh@cadence.com"|"Shanmukha AnjaneyaRaju Nandam"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008kCE0AAM"|"smallick@cadence.com"|"Sabyasachi Mallick"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000005mzNRAAY"|"shifengp@cadence.com"|"Shifeng Peng"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V0000077NA2QAM"|"jvikas@cadence.com"|"Vikas Jayathilakan"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T37YAAS"|"kanwars@cadence.com"|"Kanwarpal Singh"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000007xgYCAAY"|"monicap@cadence.com"|"M??nica Pereira"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007B81mQAC"|"pkamat@cadence.com"|"Purushottam Anand Kamat"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V0000077U38QAE"|"lokeshj@cadence.com"|"Lokesh Jigalur"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008b0AcAAI"|"stub@cadence.com"|"Stuart Bernhardt"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008Z8MSAA0"|"dammaval@cadence.com"|"Dammavalam Kiran Kumar"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w0000098z5tAAA"|"pala@cadence.com"|"Davide Pala"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008Jn5BAAS"|"balkrish@cadence.com"|"Balkrishn Agrawal"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008bMNJAA2"|"mohanty@cadence.com"|"Abhilash Mohanty"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d00000043eoeAAA"|"vidyutp@cadence.com"|"Vidyut Patel"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000006mfNRQAY"|"harshala@cadence.com"|"Harshal Sureshrao Ambatkar"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008Yz7xAAC"|"leliu@cadence.com"|"Le Liu"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w0000098X7mAAE"|"yuhorng@cadence.com"|"Cooper Hsieh"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007QAKbQAO"|"sumeethb@cadence.com"|"Sumeeth Budhi Mahaveer"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000003Tsc8AAC"|"gskim@cadence.com"|"Gang-Sic Kim"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V0000077WJIQA2"|"jding@cadence.com"|"Jack Ding"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008bRD9AAM"|"loknath@cadence.com"|"Moogi Loknath"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d00000034dIlAAI"|"alexd@cadence.com"|"Alexandre Desmarais"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000007xdsOAAQ"|"knataraj@cadence.com"|"Karthikeyan Natarajan"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008IDtDAAW"|"jyotshna@cadence.com"|"Jyotshna Sharma"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w0000097wRkAAI"|"yuvans@cadence.com"|"Yuvan Kumar Srinivasan"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T5RUAA0"|"joergs@cadence.com"|"Joerg Simon"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w00000997B6AAI"|"tkrishna@cadence.com"|"Tadepalli Anantha Krishna"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007cBOnQAM"|"vijayasm@cadence.com"|"Vijayalaxmi Malimath"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000006W5xbQAC"|"badrinar@cadence.com"|"Badri Sankarasubramaniyan"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000006KxkOQAS"|"xiaodong@cadence.com"|"Xiaodong Liu"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007RMdNQAW"|"jangsk@cadence.com"|"Seong-Gyu Jang"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T4IYAA0"|"ckunce@cadence.com"|"Christopher Kunce"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T4JFAA0"|"singha@cadence.com"|"Amit Singh"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T5bOAAS"|"mikeyoon@cadence.com"|"Mike Yoon"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000006LCDUQA4"|"sotirios@cadence.com"|"Sotirios Zogopoulos"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w00000990TNAAY"|"akishore@cadence.com"|"Addanki Sai Kishore"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008IxpvAAC"|"tejbal@cadence.com"|"Tejbal Prasad"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001UnfLAAS"|"bokong@cadence.com"|"Bokong Chen"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V0000077dZ3QAI"|"xiaobin@cadence.com"|"Xiaobin Yuan"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w0000095xrkAAA"|"manalan@cadence.com"|"Abarajithan Thamarai Manalan"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T5TTAA0"|"regan@cadence.com"|"John Regan"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000004iDxdAAE"|"kkevin@cadence.com"|"Kevin Kansagara"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V0000080KNSQA2"|"kilarisa@cadence.com"|"Kilari Sai Kumar"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000006VwqRQAS"|"javed@cadence.com"|"Javed Barkatullah"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008a1mQAAQ"|"knaresh@cadence.com"|"Karre Naresh"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w0000096pwKAAQ"|"pankajc@cadence.com"|"Pankaj :"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000008LDgeQAG"|"ernesto@cadence.com"|"Ernesto Cristopher Villegas"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008Yof5AAC"|"csivasub@cadence.com"|"Sivasubramani C"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007OAclQAG"|"tzunen@cadence.com"|"Tom Tzeng"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000006LdYyQAK"|"vmayank@cadence.com"|"Mayank Verma"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T5bcAAC"|"adlera@cadence.com"|"Amit Adler"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000004Axj0AAC"|"jfwang@cadence.com"|"Jianfeng Wang"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000009Q7dJAAS"|"cjettima@cadence.com"|"Jetti Manoj Chowdary"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T5X3AAK"|"ashokg@cadence.com"|"Ashok Galva Bikshapathy"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008bAVLAA2"|"klakshmi@cadence.com"|"Lakshmidas K"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007ztdYQAQ"|"guijnsun@cadence.com"|"Guijin Sun"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3ItAAK"|"garyc@cadence.com"|"Gary Coleman"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008aa9EAAQ"|"uchiyama@cadence.com"|"Tetsuo Uchiyama"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007HMAQQA4"|"aabhiram@cadence.com"|"Amperayani Abhiram"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T4NFAA0"|"arja@cadence.com"|"Arja Hunkin"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000004C9FhAAK"|"tsujimot@cadence.com"|"Takayuki Tsujimoto"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w0000099CySAAU"|"sourabhm@cadence.com"|"Sourabh Mundra"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000006LfxMQAS"|"petros@cadence.com"|"Petros Daniel Fernandes de Medeiros Felix"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3qqAAC"|"jedmonds@cadence.com"|"Johnathan Edmonds"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000004h4NJAAY"|"gauravr@cadence.com"|"Gaurav Ranjan"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000007xXU6AAM"|"myeongq@cadence.com"|"Myeong-Gue Kim"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008asUBAAY"|"djunkin@cadence.com"|"David Junkin"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d00000037iQlAAI"|"anandd@cadence.com"|"Anand Deshpande"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T4TUAA0"|"vishalj@cadence.com"|"Vishal Jain"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000002o5E9AAI"|"sumehta@cadence.com"|"Sucharita Mehta"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008kCxFAAU"|"jrajeev@cadence.com"|"Rajeev Jain"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000005IEIzAAO"|"khatri@cadence.com"|"Monika Khatri"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000004AxiuAAC"|"siyang@cadence.com"|"Daniel Yang"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008ZUmDAAW"|"johnnyh@cadence.com"|"Johnny HU"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000006VwX5QAK"|"mmiyuki@cadence.com"|"Miyuki Matsubara"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000006mBbnQAE"|"hirai@cadence.com"|"Satoshi Hirai"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008J77FAAS"|"nakao@cadence.com"|"Takehiko Nakao"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w0000095kXmAAI"|"yendo@cadence.com"|"Yoshikazu Endo"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008a55VAAQ"|"dlacap@cadence.com"|"Dan Lacap"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007QEYmQAO"|"jjeffery@cadence.com"|"Jeffrey J"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000006LbwFQAS"|"abhinav1@cadence.com"|"Abhinav Shrivastava"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001pZsSAAU"|"dominicl@cadence.com"|"Dominic Lavoie"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d00000043ZIMAA2"|"jingweil@cadence.com"|"Jingwei Liu"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000002mxbpAAA"|"sgaskins@cadence.com"|"Scott Gaskins"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3dwAAC"|"hchiang@cadence.com"|"Hui-Hwa Chiang"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000006L5uvQAC"|"mamis@cadence.com"|"Mami Shoji"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000004hZjPAAU"|"intae@cadence.com"|"Jason Jung"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007c5vCQAQ"|"vigneshm@cadence.com"|"Vignesh M Cadabam"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008JodsAAC"|"mlien@cadence.com"|"Milton Lien"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008aiQ3AAI"|"ksuppala@cadence.com"|"Suppala Lakshman Kumar"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000006F6GeAAK"|"mkorona@cadence.com"|"Mateusz Korona"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008a4PtAAI"|"bhaskarj@cadence.com"|"Bhaskarjyoti Pathak"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001navDAAQ"|"devs@cadence.com"|"Gurudev Sirsi"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007QYr0QAG"|"nvenkata@cadence.com"|"Venkata Nidamanuri"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w0000098lZfAAI"|"donghoon@cadence.com"|"Dong-Hoon Kim"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000002NcrgAAC"|"shivajim@cadence.com"|"Shivaji Magadum"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000006WCaoQAG"|"wdaniel@cadence.com"|"Daniel Waszczak"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000004CuPqAAK"|"nvinay@cadence.com"|"Vinay Kumar Narendra Nath"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008YYDtAAO"|"kaishan@cadence.com"|"Kaishan Wu"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T4TLAA0"|"gagans@cadence.com"|"Gagandeep Singh"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000006Exj1AAC"|"arajc@cadence.com"|"Arokiaraj C"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T4IdAAK"|"romit@cadence.com"|"Romit Aggarwal"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000007xkSIAAY"|"jaseem@cadence.com"|"Mohammed Jaseem"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007B85FQAS"|"gsuman@cadence.com"|"Suman Gupta"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d000000498rsAAA"|"minglv@cadence.com"|"Ryan Lv"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d00000034QyBAAU"|"ttrupti@cadence.com"|"Trupti Thete"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000004h1twAAA"|"mhemant@cadence.com"|"Hemant Madhewar"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000006PLiTQAW"|"ulrike@cadence.com"|"Ulrike Munz"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000004BIG5AAO"|"adnan@cadence.com"|"Adnan Tanwir"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000006W2OJQA0"|"sneeta@cadence.com"|"Neeta Sharma"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3fBAAS"|"vpreis@cadence.com"|"Viktor Preis"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V0000077TqYQAU"|"pmanishk@cadence.com"|"Manish Kumar Patel"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3OGAA0"|"koslow@cadence.com"|"Douglas Koslow"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d00000043Ph9AAE"|"sjpark@cadence.com"|"Se-Jin Park"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000003TugIAAS"|"sivakris@cadence.com"|"Sivakrishna Vemparala"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007HQaNQAW"|"muripa@cadence.com"|"Muripa Uppaluri"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008ajN5AAI"|"ramgopal@cadence.com"|"Ramgopal Venugopal"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008KleGAAS"|"sonalj@cadence.com"|"Sonal Aviral Jain"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000009Q6HMAA0"|"jungseo@cadence.com"|"Jung-Seo Ahn"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3OyAAK"|"govindp@cadence.com"|"Govind Pasumarthi"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d000000355qeAAA"|"pmeulemans@cadence.com"|"Peter Meulemans"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000002LWSNAA4"|"pratikj@cadence.com"|"Pratik J"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T45QAAS"|"swlin@cadence.com"|"Mike Lin"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3o8AAC"|"lokeshp@cadence.com"|"Lokesh Babu Pundreeka"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000004icjgAAA"|"amrits@cadence.com"|"Amrit Pal Singh"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000006WCXGQA4"|"xavierp@cadence.com"|"Xavier P J"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007dtz6QAA"|"vgor@cadence.com"|"Vishnu Dhiren Gor"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007dIpsQAE"|"dgarg@cadence.com"|"Dinesh Garg"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008YTBAAA4"|"sreeshav@cadence.com"|"Sreesha Vittal K N"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008k8PUAAY"|"kyliekyc@cadence.com"|"Kylie Chen"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008aNWoAAM"|"aranolia@cadence.com"|"Abhishek Ranolia"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000006W0qGQAS"|"bsata@cadence.com"|"Bhavana Sata"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000007xXX0AAM"|"shilpav@cadence.com"|"Shilpa V"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000006LenaQAC"|"mariuszk@cadence.com"|"Mariusz Koziel"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T96gAAC"|"yuhei@cadence.com"|"Yuhei Hayashi"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V0000077fTgQAI"|"dhirajg@cadence.com"|"Dhiraj Goswami"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000006L7vHQAS"|"hjing@cadence.com"|"Jing Huang"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001pZsTAAU"|"olivierr@cadence.com"|"Olivier Robert"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008JaUIAA0"|"wooseok@cadence.com"|"Wooseok Lee"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3cSAAS"|"lorenzn@cadence.com"|"Lorenz Neureuter"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3tXAAS"|"tfb@cadence.com"|"Thomas Burdick"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000006m7daQAA"|"udayp@cadence.com"|"Perumbuduri Uday"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000005muvUAAQ"|"ilana@cadence.com"|"Ilana Shternshain"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007Hi0SQAS"|"thangvu@cadence.com"|"Thang Vu"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008bYu5AAE"|"vishup@cadence.com"|"Vishwanath Patil"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V00000806uIQAQ"|"handral@cadence.com"|"Rakshitha V Handral"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000006W7grQAC"|"kashwini@cadence.com"|"Ashwini S Kulkarni"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007He38QAC"|"ldesai@cadence.com"|"Lay Bhupendra Desai"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000004CkxzAAC"|"aswinp@cadence.com"|"Aswin Patel"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000007xPTtAAM"|"joel@cadence.com"|"Joel Rodriguez"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w0000098bEXAAY"|"vitorgl@cadence.com"|"Vitor de Lima"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007PdtsQAC"|"asahney@cadence.com"|"Anupriya Gandhi"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3EKAA0"|"buvan@cadence.com"|"Buvan Elumalai"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000002MDpfAAG"|"hjbae@cadence.com"|"Rosa Bae"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000006LHPGQA4"|"heenak@cadence.com"|"Heena Khurana"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000005qc8KAAQ"|"gauris@cadence.com"|"Gauri Shankar"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000005nVDuAAM"|"jayac@cadence.com"|"Jaya Shankar (JASHA) Chilupuri"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V0000077WL4QAM"|"xyuan@cadence.com"|"Xiaodong Yuan"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3niAAC"|"nkanth@cadence.com"|"Sasikanth Nagineni"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007QRbKQAW"|"amay@cadence.com"|"May Al-Mashni"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001oApGAAU"|"mbossard@cadence.com"|"Mark Bossard"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T5biAAC"|"sushee@cadence.com"|"Sushee Raju"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008o87XAAQ"|"vaish@cadence.com"|"Ankur Vaish"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007QOLYQA4"|"shaikram@cadence.com"|"Shaik Ramiz Raja"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001TRieAAG"|"diveshk@cadence.com"|"Divesh Kumar"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3mmAAC"|"chinmay@cadence.com"|"Chinmay Banerjee"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008aHKDAA2"|"condron@cadence.com"|"Ed Condron"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T95SAAS"|"zhenxing@cadence.com"|"Zhenxing Peng"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w0000097llAAAQ"|"ncorbett@cadence.com"|"Nicholas Corbett"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000004h1uSAAQ"|"chelseam@cadence.com"|"Chelsea Susan Moncy"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007RswbQAC"|"parekhji@cadence.com"|"Parekh Jigar Prakashbhai"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007IKItQAO"|"abathia@cadence.com"|"Abhay Bathia"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008ZhQZAA0"|"yoon@cadence.com"|"Yoon Lee"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000005I7n6AAC"|"qianru@cadence.com"|"Qianru Liu"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000007xZseAAE"|"edanpark@cadence.com"|"Kyung-Do Park"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000004CgdtAAC"|"muralidh@cadence.com"|"Murali Kabbinamane Bhadregowda"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d00000036ZSzAAM"|"pankajkh@cadence.com"|"Pankaj Khandelwal"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000002JndxAAC"|"jshao@cadence.com"|"Jun Shao"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000006mMF9QAM"|"hessamm@cadence.com"|"Hessam Mohajeri"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008avY0AAI"|"yuchenz@cadence.com"|"Yuchen Zhang"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001TT4QAAW"|"liuz@cadence.com"|"Steven Liu"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T5PcAAK"|"jcrey@cadence.com"|"Jean-Christophe Rey"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T46XAAS"|"bhanur@cadence.com"|"Raghavapuram Bhanuprakash"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007HPhXQAW"|"amanohar@cadence.com"|"Ashutosh Raghuvir Manohar"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T36lAAC"|"alok@cadence.com"|"Alok Tripathi"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000004gXCQAA2"|"aneesh@cadence.com"|"Aneesh K S"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000008LADoQAO"|"davidjs@cadence.com"|"David Schneider"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000002LWS6AAO"|"aparam@cadence.com"|"Paramanayagam A"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w0000096NFcAAM"|"savitat@cadence.com"|"Savita Thakur"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000002LWSIAA4"|"judis@cadence.com"|"Judis S A"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000004CODdAAO"|"yankunl@cadence.com"|"Yankun Li"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T4IPAA0"|"parag@cadence.com"|"Parag Karve"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000006F7esAAC"|"ssrinidh@cadence.com"|"Srinidhi Srinivasan"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000009QGxhAAG"|"didem@cadence.com"|"Didem Turker Melek"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w0000095vYwAAI"|"yuehengr@cadence.com"|"Yueheng Ran"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000007xsUgAAI"|"asadm@cadence.com"|"Asad Makandar"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d00000044HajAAE"|"mprabhat@cadence.com"|"Prabhat Kumar Mishra"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000002LOb3AAG"|"jhouse@cadence.com"|"Jim House"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V0000080VB3QAM"|"tinglu@cadence.com"|"Ting Lu"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000005ILJrAAO"|"sfazeel@cadence.com"|"H Md Shuaeb Fazeel"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008KT4AAAW"|"ffernand@cadence.com"|"Floyd John Fernandes"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000009907vAAA"|"mkavyash@cadence.com"|"Kavyashree M"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3m7AAC"|"johndong@cadence.com"|"John Dong"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000007y3zaAAA"|"vikramk@cadence.com"|"Vikram Kumar"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000004CbsJAAS"|"ishita@cadence.com"|"Ishita Dhawan"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V0000077LiCQAU"|"kadamv@cadence.com"|"Varad Kadam"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007HGb6QAG"|"arati@cadence.com"|"Arati Reddy"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000007xXUaAAM"|"dmwoo@cadence.com"|"Duck-Myung Woo"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008alASAAY"|"sohinisu@cadence.com"|"Sohini Sudhir Lone"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w0000099ANFAA2"|"ziping@cadence.com"|"Ziping Xu"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w00000974qWAAQ"|"cwoeber@cadence.com"|"Carolyn Woeber"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008bMVSAA2"|"kgopalan@cadence.com"|"A Kiran Gopalan"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000004Cge4AAC"|"mavinker@cadence.com"|"Sunil M Mavinkere"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d00000049DriAAE"|"rkasukur@cadence.com"|"Rama Kasukurthi"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T5PjAAK"|"ernied@cadence.com"|"Ernie Duran"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007dnzyQAA"|"shengch1@cadence.com"|"Shengchen Du"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007Pwh7QAC"|"rtoniolo@cadence.com"|"Renan de Oliveira"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w0000095kRUAAY"|"carlzhao@cadence.com"|"Carl Zhao"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008bG6qAAE"|"patelpri@cadence.com"|"Priyam Patel"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d00000043tahAAA"|"gopani@cadence.com"|"Ankit Gopani"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008Z2xIAAS"|"hwangjef@cadence.com"|"Jeffrey Hwang"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001ncIkAAI"|"sanshah@cadence.com"|"Santosh Shah"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T4CAAA0"|"ramet@cadence.com"|"Thomas Ramet"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000004hHusAAE"|"jayeshs@cadence.com"|"Jayesh Kumar Sharma"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008JTWCAA4"|"pathak@cadence.com"|"Sushant Pathak"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007QRbFQAW"|"abufarha@cadence.com"|"Mohammad Abu Farha"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007HSaKQAW"|"guoxu@cadence.com"|"Xu Guo"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007cL6FQAU"|"dmayank@cadence.com"|"Mayank Dhananiwala"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T4G0AAK"|"matthew@cadence.com"|"Matthew Collin"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000004CuPhAAK"|"sangjun@cadence.com"|"Sang-Jun Oh"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000006LCV4QAO"|"sneeraj@cadence.com"|"Neeraj Sharma"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000007xlkNAAQ"|"pjaya@cadence.com"|"Jaya Patel"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000004gVgZAAU"|"adarshm@cadence.com"|"Adarsh Malagi"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000009QG0fAAG"|"ananth@cadence.com"|"Channakeshav Ananth"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w00000997BBAAY"|"bharsh@cadence.com"|"Harsh Bhardwaj"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3xTAAS"|"henrys@cadence.com"|"Henry Szymanski"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008krL2AAI"|"amritha@cadence.com"|"Amritha Manoharan"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000006F9B0AAK"|"brill@cadence.com"|"Frank Brill"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w0000095cUuAAI"|"radhikat@cadence.com"|"Radhika Thakur"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T32iAAC"|"ataneja@cadence.com"|"Ashok Taneja"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000002Jr3sAAC"|"rudyc@cadence.com"|"Rudy Couget"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3KsAAK"|"robm@cadence.com"|"Robert McLellan"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V0000077RDeQAM"|"chiragr@cadence.com"|"Chirag A R"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000006Vu96QAC"|"singhrag@cadence.com"|"Raghvendra Singh"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000006EuvyAAC"|"richar@cadence.com"|"Richa Rathore"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000002p1J3AAI"|"oktawian@cadence.com"|"Oktawian Linda"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007cY8xQAE"|"ishank@cadence.com"|"Ishan Kathuria"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3AqAAK"|"keitha@cadence.com"|"Keith Anderson"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000002LObAAAW"|"sharath@cadence.com"|"Sharath N Narasimhamurthy"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000006W7h1QAC"|"radhikas@cadence.com"|"Radhika Swarnkar"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000009Q6K1AAK"|"ankitak@cadence.com"|"Ankita Kumari"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d00000034vI4AAI"|"varunr@cadence.com"|"Varun R"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000005IHYWAA4"|"knagaraj@cadence.com"|"Nagaraj Komaraboina"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008XZVnAAO"|"rwik@cadence.com"|"Rwik Sengupta"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007R9owQAC"|"msela@cadence.com"|"Michael Sela"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007Hb4rQAC"|"swethash@cadence.com"|"Swetha S"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3tzAAC"|"radhika@cadence.com"|"Radhika Alapati"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000003TscDAAS"|"prasadc@cadence.com"|"Prasad Chidrewar"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3PLAA0"|"rlipsey@cadence.com"|"Robert Lipsey"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007BDjUQAW"|"hongmin@cadence.com"|"Hongmin Hu"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w0000098I28AAE"|"anandh@cadence.com"|"Harshita Anand"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000005nTTKAA2"|"rkarthik@cadence.com"|"Karthik Ramachandran"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000006EzaUAAS"|"mervyn@cadence.com"|"Mervyn Rohit Alexander"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000007y2lIAAQ"|"dpriyada@cadence.com"|"Priyadarshini N D"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000002L7IiAAK"|"mallik@cadence.com"|"Mallikarjuna Ambay"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008k7QVAAY"|"arung@cadence.com"|"Arun Goyal"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3SfAAK"|"tarak@cadence.com"|"Tarak Ray"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008mxB2AAI"|"mhug@cadence.com"|"Marco Hug"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T41qAAC"|"sgor@cadence.com"|"Sandeep Gor"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000004iDxeAAE"|"dilips@cadence.com"|"S Dilip Abhiram Mihir"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008Y5jCAAS"|"chenhanc@cadence.com"|"Chen-Han Chen"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007HMopQAG"|"piccioni@cadence.com"|"Stefano Piccioni"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007R05YQAS"|"vipinxav@cadence.com"|"Vipin Xavier K M"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008a1sTAAQ"|"smourya@cadence.com"|"Shashank Mourya"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001nbxGAAQ"|"felske@cadence.com"|"Thomas Felske"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007HWxNQAW"|"abhinan1@cadence.com"|"Abhinandan J"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000007xoj3AAA"|"jahnavig@cadence.com"|"Gali Jahnavi"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V0000077Te3QAE"|"kdinesh@cadence.com"|"Kota Sanjeeva Dinesh"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007HP7AQAW"|"wangd@cadence.com"|"David Wang"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007I74tQAC"|"dkarthik@cadence.com"|"Karthik Arlithaya Delampady"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000007xXUGAA2"|"jypark@cadence.com"|"Ji-Yeong Park"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007cacpQAA"|"kavyashr@cadence.com"|"T M Kavyashree"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008alAXAAY"|"ashankar@cadence.com"|"Shankar Suryakant Ambure"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008aFX0AAM"|"chenyan@cadence.com"|"Chen Perkins Yan"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000006F7f5AAC"|"ahindole@cadence.com"|"Akshay Hindole"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V0000077bK6QAI"|"hkchopra@cadence.com"|"Honey Chopra"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w0000098TyhAAE"|"kumamoto@cadence.com"|"Takefumi Kumamoto"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000006EuvzAAC"|"dannyj@cadence.com"|"Danny Jung"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000006F7f8AAC"|"sanathkr@cadence.com"|"Sanathkrishna Holla"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3e0AAC"|"advorak@cadence.com"|"Anton Dvorak"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T4AIAA0"|"dwgong@cadence.com"|"Dawei Gong"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T4JJAA0"|"deepti@cadence.com"|"Deepti Pandita"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V0000077Us1QAE"|"tsandeep@cadence.com"|"Thagaram Sandeep"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001nYUvAAM"|"mozumder@cadence.com"|"Bobby Mozumder"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T4FZAA0"|"yanxz@cadence.com"|"Xiaozhou (PE) Yan"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3bfAAC"|"satoshi@cadence.com"|"Satoshi Izumisaki"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007Pc5IQAS"|"chintani@cadence.com"|"Chintanika Mansukhlal Chothani"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008KH5aAAG"|"arindam1@cadence.com"|"Arindam Dasgupta"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T5y0AAC"|"rbaby@cadence.com"|"Baby Ravi"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008YH4uAAG"|"tsiddhar@cadence.com"|"Siddharth Tiwari"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008YYH2AAO"|"pzaveri@cadence.com"|"Parth Ragesh Zaveri"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000005nYFaAAM"|"sidhantt@cadence.com"|"Sidhant Thukral"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001naBjAAI"|"sborzin@cadence.com"|"Shiva Borzin"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000006LfXYQA0"|"bvaibhav@cadence.com"|"Vaibhav B.P"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w0000098yjnAAA"|"vincekim@cadence.com"|"Vince Kim"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000005I6nNAAS"|"raghunad@cadence.com"|"Raghunadh Puranam"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007IYarQAG"|"gouthams@cadence.com"|"Goutham S"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008IBKpAAO"|"hpeddi@cadence.com"|"Hemanth Kumar Peddi"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008aqEKAAY"|"pdoundka@cadence.com"|"Prathamesh Hemant Doundkar"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000006LCD5QAO"|"luschas@cadence.com"|"Manuel Luschas"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008Y1JyAAK"|"csee@cadence.com"|"Christopher See"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000006mFHmQAM"|"sumitk@cadence.com"|"Sumit Kumar"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000004ih9yAAA"|"sani@cadence.com"|"Sani Dewal"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008alANAAY"|"hemantka@cadence.com"|"Hemant Wadhavankar"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d00000044SsyAAE"|"hemanthk@cadence.com"|"Hemanth Kumar Nayaka K M"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000004gPMSAA2"|"naveenm@cadence.com"|"Naveen Malik"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d00000043oxNAAQ"|"joydeepc@cadence.com"|"Joydeep Roychowdhury"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3M1AAK"|"walker@cadence.com"|"Jeannette Walker"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000002KQl2AAG"|"rakeshm@cadence.com"|"Rakesh Malik"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V0000077PTQQA2"|"ljsong@cadence.com"|"Lingjian Song"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000007xmrjAAA"|"pratigya@cadence.com"|"Pratigya Mathur"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000006LaqaQAC"|"siliveri@cadence.com"|"Siliveri Sai Kishore Kumar"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008ZvKVAA0"|"akhandra@cadence.com"|"Abhigna Khandra"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3jdAAC"|"vkadam@cadence.com"|"Vinayak Ramchandra Kadam"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008Z1eZAAS"|"makram@cadence.com"|"Muhammad Akram Bin Zulkifly"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3nhAAC"|"evneet@cadence.com"|"Evneet Bhatia"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000005n3xxAAA"|"libink@cadence.com"|"Libin Kurian"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000005mmqsAAA"|"ssudheer@cadence.com"|"Sasapu Sudheer Sagar"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008auHrAAI"|"soontae@cadence.com"|"Soon-Tae Kwon"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d00000036FyFAAU"|"takesita@cadence.com"|"Makoto Takeshita"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007He4BQAS"|"lsharma@cadence.com"|"Lokesh Sharma"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3UEAA0"|"jcooper@cadence.com"|"Jon Cooper"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000004gx9iAAA"|"mautade@cadence.com"|"Manoj Autade"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007PUIsQAO"|"vgangwar@cadence.com"|"Vimal Kumar Gangwar"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3xZAAS"|"danielb@cadence.com"|"Daniel Bayer"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000003SngfAAC"|"subs@cadence.com"|"Subbulakshmi S"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T5xhAAC"|"bwareham@cadence.com"|"Bill Wareham"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000006EoySAAS"|"rporter@cadence.com"|"Rob Porter"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T5TgAAK"|"nitins@cadence.com"|"Nitin Shrawagi"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007RycXQAS"|"vguru@cadence.com"|"V Guru Aarath"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000006F7f2AAC"|"vnaveen@cadence.com"|"Naveen Kumar"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d00000048xqwAAA"|"pawateb@cadence.com"|"Raj Pawate"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3wOAAS"|"rajeshk@cadence.com"|"Rajesh Kumar"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w0000095nSkAAI"|"kisono@cadence.com"|"Katsutomo Isono"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000004gSajAAE"|"hshekhar@cadence.com"|"Himanshu Shekhar"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000006LDE4QAO"|"kanchans@cadence.com"|"Kanchan Sunia"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000006W0nWQAS"|"kramalin@cadence.com"|"Karthik Ramalingam"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008kOhnAAE"|"dingw@cadence.com"|"Ding Wang"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001TRifAAG"|"fbriggs@cadence.com"|"Francine Briggs"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008Ig4xAAC"|"amit4@cadence.com"|"Amit Kumar"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000000q5SvAAI"|"yasminv@cadence.com"|"Yasmin Vermeulen"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d00000034PdYAAU"|"amrit@cadence.com"|"Amrithraj Amrithraj"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000004hz8EAAQ"|"padmajas@cadence.com"|"Padmaja Subramanian"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000002mlVtAAI"|"abaldiss@cadence.com"|"Alberto Baldisserotto"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3IAAA0"|"gecao@cadence.com"|"Ann Cao"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008JebhAAC"|"illikkal@cadence.com"|"Muhammed Suhail Illikkal"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008m991AAA"|"linklee@cadence.com"|"Link Lee"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3U5AAK"|"cmaker@cadence.com"|"Casey Maker"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000004ifjEAAQ"|"jampala@cadence.com"|"Vidyasagar Jampala"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3cIAAS"|"nageshg@cadence.com"|"Nagesh Rao Gadepalli"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000006VyPcQAK"|"vkannadi@cadence.com"|"Kannadi Vijay"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000006LRwKQAW"|"mkunjir@cadence.com"|"Amit Maruti Kunjir"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007HL6NQAW"|"arshmeet@cadence.com"|"Arshmeet Kaur"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000002KQQnAAO"|"bwithers@cadence.com"|"Brian Withers"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008YXc0AAG"|"hyunlee@cadence.com"|"Hyun Lee"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T43YAAS"|"sridharm@cadence.com"|"M Sridhar Reddy"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007HXwfQAG"|"sandeepw@cadence.com"|"Sandeep Sharad Waikar"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008YtRXAA0"|"tushara@cadence.com"|"Tushar Agarwal"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000006LSCcQAO"|"sriharsh@cadence.com"|"Raavi Sriharsha"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008aRrMAAU"|"carlosm@cadence.com"|"Carlos Marquez Luevano"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T5RvAAK"|"dcicero@cadence.com"|"Desmond Cicero"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000006F2czAAC"|"pbhaskar@cadence.com"|"Bhaskar Parasaram"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000005hiSKAAY"|"mithun@cadence.com"|"Mithun Kumar Swain"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000007xt24AAA"|"caiom@cadence.com"|"Caio Miranda"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007HP33QAG"|"shmulikp@cadence.com"|"Shmuel Pisanty"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008YzGaAAK"|"xiaopin@cadence.com"|"Ma Xiaopin"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w0000096ktgAAA"|"emerson@cadence.com"|"Emerson Camargo"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007BWmmQAG"|"saikats@cadence.com"|"Saikat Sana"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3ESAA0"|"lda@cadence.com"|"Larry Aschliman"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T340AAC"|"brent@cadence.com"|"Brent Carlson"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d00000043ZIPAA2"|"xueying@cadence.com"|"Shirley Jiang"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d00000049lcuAAA"|"veeru@cadence.com"|"Veeru Mendru"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000009Q6tMAAS"|"hanling@cadence.com"|"Sherry Zhang"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008an1wAAA"|"rchinnam@cadence.com"|"Ramakrishna Chinnam"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000007xlBwAAI"|"tigran@cadence.com"|"Tigran Khachatryan"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008XXOeAAO"|"nagarajn@cadence.com"|"Nithin Nagaraj"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d000000371YDAAY"|"jank@cadence.com"|"Jan Kotas"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T5TqAAK"|"huy@cadence.com"|"Huy Vu"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008Ixt4AAC"|"lalitk@cadence.com"|"Lalit Kumar"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3qVAAS"|"ochiba@cadence.com"|"Osamu Chiba"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008ZYnyAAG"|"madapati@cadence.com"|"Madapati Srikanth"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3y0AAC"|"kawaji@cadence.com"|"Takao Kawaji"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000002KQQ9AAO"|"pmac@cadence.com"|"Peter MacLiesh"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008XtxlAAC"|"aanusha@cadence.com"|"A Anusha Chavan"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w0000095kTDAAY"|"tnaito@cadence.com"|"Taiki Naito"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007HPYfQAO"|"vbarbosa@cadence.com"|"Victor Rodrigues Barbosa"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3KyAAK"|"fjk@cadence.com"|"Naoki Fujiike"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d00000043tajAAA"|"aravinds@cadence.com"|"Aravind Sundararaj"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w0000098nBpAAI"|"sivapr@cadence.com"|"Sivaprakasam :"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000006LTpQQAW"|"mehtap@cadence.com"|"Paritosh Mehta"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000007xgAoAAI"|"kahern@cadence.com"|"Ken Ahern"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008kU8yAAE"|"saswath@cadence.com"|"Saswath T"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007HFTuQAO"|"angalhar@cadence.com"|"Harshad Nitin Angal"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T5VtAAK"|"vincep@cadence.com"|"Vince Pham"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000007xixTAAQ"|"mekhalab@cadence.com"|"Mekhala B Karlawad"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000002KdjcAAC"|"subhe@cadence.com"|"Shekhar Ubhe"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T5PfAAK"|"gottsch@cadence.com"|"Gert Gottschalk"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000004BfZjAAK"|"kanurag@cadence.com"|"Kumar Anurag"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3xwAAC"|"chencc@cadence.com"|"Eric Chen"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000002qLjFAAU"|"ashlesha@cadence.com"|"Ashlesha Vikrant Karandikar"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008JHxQAAW"|"srlin@cadence.com"|"Steven (Shuo-Ren) LIN"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3CjAAK"|"mpoplack@cadence.com"|"Mitch Poplack"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3WEAA0"|"hartong@cadence.com"|"Walter Hartong"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T45UAAS"|"sroy@cadence.com"|"Siddharth Roy"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3qpAAC"|"pankaja@cadence.com"|"Pankaj Arora"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007cdR6QAI"|"abhiroop@cadence.com"|"Abhiroop Bose"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000002MxKfAAK"|"tsubrama@cadence.com"|"Subramanian TR"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008ajadAAA"|"dianas@cadence.com"|"Diana Shain"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3KmAAK"|"ube@cadence.com"|"Tsutomu Ube"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001UkKrAAK"|"yuvalg@cadence.com"|"Yuval Gilad"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007HFSDQA4"|"raghunat@cadence.com"|"Avvaru Raghunath"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T32VAAS"|"mmengele@cadence.com"|"Marty Mengele"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000006PKPfQAO"|"shubham@cadence.com"|"Shubham Banka"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007RmtgQAC"|"cveedhi@cadence.com"|"Chandra Sekhar Veedhi"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007I4ITQA0"|"cding@cadence.com"|"Cong Ding"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T5NuAAK"|"gurnaik@cadence.com"|"Gurnaik Singh"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000004gx9cAAA"|"sambati@cadence.com"|"Satish Kumar Ambati"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3btAAC"|"ljensen@cadence.com"|"Lisa Jensen"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T39KAAS"|"rainerk@cadence.com"|"Rainer Koermeier"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008li9sAAA"|"vvignesh@cadence.com"|"Vigneshwaran Venkatasalapathy"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T4TEAA0"|"gheewala@cadence.com"|"Manishkumar Gheewala"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000007y5QwAAI"|"kunamsri@cadence.com"|"Kunam Srikanth Reddy"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V0000077ZpRQAU"|"bspreddy@cadence.com"|"Boosa Siva Prasad Reddy"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000006L0onQAC"|"jankit@cadence.com"|"Ankit Jain"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T49zAAC"|"hibiki@cadence.com"|"Hidemi Hibiki"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w0000096N0XAAU"|"anujgupt@cadence.com"|"Anuj Gupta"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000007xn02AAA"|"vkarasen@cadence.com"|"Vitali Karasenko"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008XcuzAAC"|"leonleao@cadence.com"|"Leonardo Gouvea"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T5dRAAS"|"jmaclaren@cadence.com"|"John MacLaren"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008b0AXAAY"|"penniman@cadence.com"|"Dan Penniman"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T9IqAAK"|"srdjand@cadence.com"|"Srdjan Djordjevic"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008YN1NAAW"|"madhucjr@cadence.com"|"Madhu Comandur Jagannathan Raghunathan"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d00000034vI1AAI"|"mazek@cadence.com"|"Mazek Kukkady"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T4LoAAK"|"fredrik@cadence.com"|"Fredrik Ivarsson"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008YeuAAAS"|"kdeepshi@cadence.com"|"Deepshikha Kumari"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007PWGjQAO"|"ashokkum@cadence.com"|"AshokKumar Karuppiah"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000005mmqrAAA"|"kbabu@cadence.com"|"Rajesh Babu Kunda"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008XX5DAAW"|"brianj@cadence.com"|"Brian Jackson"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T5foAAC"|"mgoel@cadence.com"|"Monica Goel"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000004hA9QAAU"|"varmaa@cadence.com"|"Avinash Mahendra Varma"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3P4AAK"|"kevinqc@cadence.com"|"Kevin (TFO) Chung"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d00000049ldVAAQ"|"cankur@cadence.com"|"Ankur Chikara"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008aFtBAAU"|"keiichi@cadence.com"|"Keiichi Hashimoto"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000005I7nDAAS"|"jkrishna@cadence.com"|"Krishna Jandhyam"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008IrW4AAK"|"richak@cadence.com"|"Richa Karnani"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3SsAAK"|"ssomenzi@cadence.com"|"Stefano Somenzi"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008bREvAAM"|"spavan@cadence.com"|"Pavan Iyengar S"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V00000806uNQAQ"|"linany@cadence.com"|"Linan Ye"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008Y9UBAA0"|"croysdal@cadence.com"|"Kevin Croysdale"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3cOAAS"|"worsham@cadence.com"|"Hodge Worsham"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w0000098YRdAAM"|"vbalure@cadence.com"|"Vinod Kumar Balure"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d00000035NB6AAM"|"barletta@cadence.com"|"Andrea Barletta"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000003VgpmAAC"|"singwala@cadence.com"|"Rajeshkumar Singwala"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000004CuQ9AAK"|"darshann@cadence.com"|"Darshan Naik"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T37TAAS"|"gaur@cadence.com"|"Sharad Gaur"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w0000098BryAAE"|"dashish@cadence.com"|"Ashish Kumar Dubey"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3gQAAS"|"reddyv@cadence.com"|"Venkataramana Reddipalli"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008JcUPAA0"|"xiaoting@cadence.com"|"Xiaoting Fu"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000003VE6dAAG"|"yuka@cadence.com"|"Yuka Irino"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d00000036UdoAAE"|"pkallem@cadence.com"|"Praveen Kallem"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000009Q5NiAAK"|"bilal@cadence.com"|"Bilal Abu Awwad"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w0000098sohAAA"|"pkwan@cadence.com"|"Philip Kwan"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000004h4NKAAY"|"kraghuva@cadence.com"|"Raghuvamshi Kattoju"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000007xmreAAA"|"samrin@cadence.com"|"S Amrin"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w0000095hoLAAQ"|"sudhanva@cadence.com"|"Sudhanva V S"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d000000446JLAAY"|"ayue@cadence.com"|"Anne Yue"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w0000098PKJAA2"|"mahe@cadence.com"|"Mahesh :"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007HL7aQAG"|"pnamrata@cadence.com"|"Namrata Panchal"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3NJAA0"|"palumbo@cadence.com"|"David Palumbo"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000006F9BHAA0"|"rmani@cadence.com"|"R Balasubramanian"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3UaAAK"|"ged@cadence.com"|"David Ge"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008KObOAAW"|"itisha@cadence.com"|"Itisha Chauhan"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T5fYAAS"|"saugat@cadence.com"|"Saugat Sen"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007HdHOQA0"|"weilan@cadence.com"|"Weilan Wang"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T35CAAS"|"adua@cadence.com"|"Amit Dua"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w0000098socAAA"|"jbridges@cadence.com"|"Jacques Bridges"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T47pAAC"|"gautam@cadence.com"|"Gautam Kumar"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3gUAAS"|"rpluth@cadence.com"|"Ron Pluth"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007BV9eQAG"|"lakhan@cadence.com"|"Lakhan :"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008XkD0AAK"|"gagankum@cadence.com"|"Gagan Kumar Agarwal"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000002mn2eAAA"|"nviswan@cadence.com"|"Natarajan Viswanathan"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T5NZAA0"|"lsong@cadence.com"|"Lei Song"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3P0AAK"|"sunilp@cadence.com"|"Sunil Pamidi"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007N85sQAC"|"kmckenna@cadence.com"|"Kathleen McKenna"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000007xiIQAAY"|"eusebio@cadence.com"|"Mateus Eus??bio"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000006mLNvQAM"|"ksuresh@cadence.com"|"Kavya Suresh"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w00000960r4AAA"|"chenhao@cadence.com"|"ChenHao Chiu"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3RcAAK"|"manig@cadence.com"|"Mani Gollapudi"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007PLjBQAW"|"srishtik@cadence.com"|"Srishti Khanna"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007RMPkQAO"|"sungjin@cadence.com"|"Sung-Jin Park"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000005I6ePAAS"|"karthick@cadence.com"|"N Karthick"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000002KRmNAAW"|"manujg@cadence.com"|"Manuj Gupta"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008b9TiAAI"|"goksin@cadence.com"|"Goksin Erdogan"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000002KfPbAAK"|"sgadkari@cadence.com"|"Shrinivas Gadkari"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000006LQKFQA4"|"atiqj@cadence.com"|"Atiq Jamadar"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000009Q1qgAAC"|"snaik@cadence.com"|"Saahil Santosh Naik"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000002L1NbAAK"|"bijitm@cadence.com"|"Bijitendra Mittra"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T5MFAA0"|"dsallard@cadence.com"|"David Sallard"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V0000080V7LQAU"|"zhixiang@cadence.com"|"Zhixiang Jiang"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000007y2lNAAQ"|"nithinar@cadence.com"|"Nithin Aradhya Y L"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007He1lQAC"|"krishnag@cadence.com"|"Krishna Kumar Ganapathy Raman"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T4GXAA0"|"mgupta@cadence.com"|"Mohit Gupta"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000006W1VEQA0"|"nathank@cadence.com"|"Nathan Kurz"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008Y74QAAS"|"manfshek@cadence.com"|"Man-Fai Shek"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008nnWbAAI"|"piyushgu@cadence.com"|"Piyush Gupta"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000002LKHgAAO"|"martin@cadence.com"|"Martin Koechel"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T4VUAA0"|"therrien@cadence.com"|"Chris Therrien"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T4AnAAK"|"sbortman@cadence.com"|"Santiago Bortman"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T30mAAC"|"padmaja@cadence.com"|"Padma Narwankar"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w0000098GhOAAU"|"shineyun@cadence.com"|"Shine Yun"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008Z9deAAC"|"absanjai@cadence.com"|"Sanjai Athi"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008bUGLAA2"|"naveenb@cadence.com"|"Naveen Bhusareddy"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007RQWGQA4"|"avitguru@cadence.com"|"Avit Gururaj Kori"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001q3cVAAQ"|"acku@cadence.com"|"Acku Singh Chauhan"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008Yz7sAAC"|"rpang@cadence.com"|"Ran Pang"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000007xsbSAAQ"|"danand@cadence.com"|"Anand D"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000006m8yAQAQ"|"fengc@cadence.com"|"Chao Feng"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007HRIAQA4"|"tomjones@cadence.com"|"Thomas Jones"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000005qaQJAAY"|"kautz@cadence.com"|"Frederik Kautz"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000006LCCbQAO"|"dloizos@cadence.com"|"Dimitri Loizos"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000006WCXLQA4"|"sivapras@cadence.com"|"Siva Prasad Veeraboinigolla"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008aNX3AAM"|"arajak@cadence.com"|"Arun Rajak"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000007xYjqAAE"|"psai@cadence.com"|"P Sai Akhil"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000006F0uJAAS"|"yagya@cadence.com"|"Yagya Mishra"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000004hrd4AAA"|"yarama@cadence.com"|"Sreenath Yaramareddy"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000004gqBwAAI"|"sihare@cadence.com"|"Sachin Sihare"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V0000080KvPQAU"|"mansic@cadence.com"|"Mansi Chhichhia"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d000000434GmAAI"|"nitinc@cadence.com"|"Nitin Chaudhary"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000003VNooAAG"|"harishm@cadence.com"|"Harish M"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000004CACIAA4"|"ssrikant@cadence.com"|"V Srinivas Srikanth"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008Jl7AAAS"|"chetanbr@cadence.com"|"Chetan BR"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000004iDxZAAU"|"sudhag@cadence.com"|"Sudha Rani G"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000002KQQMAA4"|"akilesh@cadence.com"|"Aki Parameswar"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000004iBXGAA2"|"krakeshs@cadence.com"|"Rakeshsarma Kasukurthi"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V0000077QDiQAM"|"sramaiah@cadence.com"|"Sakthivel R"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000002KQQNAA4"|"sparikh@cadence.com"|"Sandip Parikh"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w0000098ja2AAA"|"willant@cadence.com"|"Kyung-Sik Yoo"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000004CV6TAAW"|"akhilr@cadence.com"|"Akhil Rathore"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3joAAC"|"sciascia@cadence.com"|"Tom Sciascia"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007HJ7OQAW"|"pdhanraj@cadence.com"|"Dhanraj P"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T4EcAAK"|"dgaur@cadence.com"|"Deepak Gaur"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w0000095kX8AAI"|"tyoshi@cadence.com"|"Yoshihisa Takekoshi"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008lzcXAAQ"|"snehat@cadence.com"|"Sneha Tiwari"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001TiBQAA0"|"joehuang@cadence.com"|"Joe Huang"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007e0g1QAA"|"dsoni@cadence.com"|"Deepak Soni"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3TJAA0"|"hkosasih@cadence.com"|"Hendy Kosasih"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008aNWtAAM"|"ibrahims@cadence.com"|"Ibrahim S"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000006Vwr0QAC"|"fraleigh@cadence.com"|"Stephen Fraleigh"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T4TtAAK"|"jjayacha@cadence.com"|"Jags Jayachandran"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T4B8AAK"|"jadec@cadence.com"|"Jade Cravy"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w0000095PrvAAE"|"evanmok@cadence.com"|"Evan Mok"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008aWGVAA2"|"jainth@cadence.com"|"Jainthkumar Laguduva"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T4AWAA0"|"alvord@cadence.com"|"Carter Alvord"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007HQBIQA4"|"prashan1@cadence.com"|"Kaushik Prashantsinh Ramnarayansinh"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w0000098jXIAAY"|"kevinyoo@cadence.com"|"Seung-Beom Yoo"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008ZXMIAA4"|"yash@cadence.com"|"Yash Mahendra"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000006mDERQA2"|"hnsachin@cadence.com"|"Sachin Dev H N"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3WLAA0"|"sprague@cadence.com"|"Justin Sprague"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000006W10pQAC"|"sulakhea@cadence.com"|"Amit Pradeep Sulakhe"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T5PKAA0"|"andreb@cadence.com"|"Andre Baguenier"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3JbAAK"|"jlarriu@cadence.com"|"Joel Larriu"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000006mBN7QAM"|"jhgil@cadence.com"|"Jung-Hwan Gil"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T448AAC"|"puneetv@cadence.com"|"Puneet Damera Venkata"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T4CtAAK"|"sameek@cadence.com"|"Sameek Chanda"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000002LWRFAA4"|"lalitha@cadence.com"|"Lalitha Vurakaranam"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000004ih9zAAA"|"chethanm@cadence.com"|"Chethan MN"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3tAAAS"|"cvsmale@cadence.com"|"Chen Smale"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000005n3cWAAQ"|"kishoren@cadence.com"|"Kishore Babu Nainappagari"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000007xHOgAAM"|"shubham6@cadence.com"|"Shubham Saxena"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w0000098GngAAE"|"msujithk@cadence.com"|"Mateti Sujithkumar"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000005mlZxAAI"|"sungsikh@cadence.com"|"Sungsik Hwang"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008atD0AAI"|"giedrius@cadence.com"|"Giedrius Lukosevicius"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3qRAAS"|"carlyang@cadence.com"|"Carl Yang"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000005I9iiAAC"|"vignesh@cadence.com"|"Vignesh Krishna"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000004hFGWAA2"|"apooravg@cadence.com"|"Apoorav Gupta"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007I753QAC"|"hchandra@cadence.com"|"Himanshu Chandrakar"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T5bNAAS"|"liuhy@cadence.com"|"Huanyan Liu"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T5xiAAC"|"harishr@cadence.com"|"Harish Ramachandra"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V0000077TMnQAM"|"spoornim@cadence.com"|"Poornima Srivastava"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000006LCuiQAG"|"deepv@cadence.com"|"Deep Verma"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008agdjAAA"|"nhanle@cadence.com"|"Duc Nhan Le"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T31WAAS"|"luoni@cadence.com"|"Perry Luoni"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007AxkqQAC"|"saratht@cadence.com"|"Sarath T Sasidharan"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000006LfYbQAK"|"ayushm@cadence.com"|"Ayush Mehrotra"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000003TH65AAG"|"roopesh@cadence.com"|"Roopesh Paruchuri"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3KdAAK"|"takehiko@cadence.com"|"Takehiko Harada"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T5RRAA0"|"musall@cadence.com"|"Ed Musall"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007QaiUQAS"|"adish@cadence.com"|"Adish Mehta"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d000000439NOAAY"|"atake@cadence.com"|"Toru Atake"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007HMB9QAO"|"anukool@cadence.com"|"Anukool Rajoriya"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007HSZlQAO"|"xiayangw@cadence.com"|"Xiangyang Wang"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000006F9BMAA0"|"sagarcv@cadence.com"|"Sagar C V"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000004CnjKAAS"|"brijp@cadence.com"|"Brij Pandey"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000007xixEAAQ"|"hbhargav@cadence.com"|"Bhargava Hegde"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T5MXAA0"|"thomasa@cadence.com"|"Thomas Arackapparampil"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008XV3tAAG"|"msteczni@cadence.com"|"Michal Steczniewski"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000006LHPzQAO"|"shreyaak@cadence.com"|"Bhayani Shreya Akshay"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008a1gDAAQ"|"ddinesh@cadence.com"|"Duddu Dinesh"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007HFS8QAO"|"chhavi@cadence.com"|"Chhavi Patni"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3oJAAS"|"olegz@cadence.com"|"Oleg Zhikharev"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w0000097llFAAQ"|"mgrimmon@cadence.com"|"Mark Grimmond"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007SH9yQAG"|"pengj@cadence.com"|"Peng Ji"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000002LWSLAA4"|"jaishree@cadence.com"|"Jaishree S"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007BJLsQAO"|"yanhuil@cadence.com"|"Yanhui Luo"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000004hz8IAAQ"|"mwalla@cadence.com"|"Mark Walla"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008l0nPAAQ"|"nithinks@cadence.com"|"Nithin K S"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000002MrEDAA0"|"niharika@cadence.com"|"Niharika Gupta"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T45WAAS"|"sunithag@cadence.com"|"Sunitha Devi Gopinath"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w0000095kWPAAY"|"shigaki@cadence.com"|"Shinya Higaki"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3osAAC"|"tanahara@cadence.com"|"Fumiaki Tanahara"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000004i7mIAAQ"|"ymoshe@cadence.com"|"Yaniv Moshe"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008Joe7AAC"|"mnaeem@cadence.com"|"Majid Naeem"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T5W3AAK"|"acyoung@cadence.com"|"Andrew Young"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000005mtc7AAA"|"vporla@cadence.com"|"Venkateshwarlu Porla"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000007xHOlAAM"|"gowthamp@cadence.com"|"Gowtham P K"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007HWl7QAG"|"mpriya@cadence.com"|"Manne Vana Priya"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007Rb2RQAS"|"yunsheng@cadence.com"|"Yunsheng Pan"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000003T8YPAA0"|"shadi@cadence.com"|"Shadi Saba"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000006F67IAAS"|"ketkig@cadence.com"|"Ketki Gosavi"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w0000098foZAAQ"|"ketanm@cadence.com"|"Ketan Mishra"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000006LdsAQAS"|"hmehta@cadence.com"|"Harshit Mehta"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000006LCClQAO"|"jacklam@cadence.com"|"Jack Lam"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000007xJYdAAM"|"whitneyg@cadence.com"|"Whitney Greenwood"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000005I5qrAAC"|"jyjeong@cadence.com"|"Jun-Young Jeong"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008XXI7AAO"|"rohitkum@cadence.com"|"Rohit Kumar"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001naGIAAY"|"akira@cadence.com"|"Akira Matsubayashi"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008ZVYgAAO"|"pgautami@cadence.com"|"Palikila Gautami"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d000000355qlAAA"|"pdanielson@cadence.com"|"Paul Danielson"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008YQrlAAG"|"vsnaresh@cadence.com"|"V S Naresh M"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T5ZAAA0"|"indu@cadence.com"|"Indu Dhingra"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w00000995J3AAI"|"ethankim@cadence.com"|"Jin-Kyu Kim"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008Xtv6AAC"|"vinesh@cadence.com"|"Vinesh Jayaraman"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V0000080WtQQAU"|"anushap@cadence.com"|"Anusha R Pathak"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007S8iQQAS"|"kantibha@cadence.com"|"Chiragkumar Patel"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T39mAAC"|"jacek@cadence.com"|"Jacek Wuwer"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000002LWRIAA4"|"rajap@cadence.com"|"Raja Pounraj"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007QTunQAG"|"nisreens@cadence.com"|"Nisreen Sakas"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V0000080V6rQAE"|"bhatv@cadence.com"|"Vaibhav Madhav Bhat"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V0000077WXFQA2"|"sreyasm@cadence.com"|"Sreyas Mohan"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001pZsDAAU"|"nadimez@cadence.com"|"Nadime Zacharia"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000006LfXOQA0"|"abhoy@cadence.com"|"Abhoy Mondal"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000006LE2YQAW"|"lishen@cadence.com"|"Lishen Yin"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3nbAAC"|"dcart@cadence.com"|"Don Cart"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008Ij7fAAC"|"bearw@cadence.com"|"Bear Wang"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3wUAAS"|"jvander@cadence.com"|"James Vandersand"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000009Q6HRAA0"|"shoh@cadence.com"|"Seunghyun Oh"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V0000077UKJQA2"|"kasmo@cadence.com"|"Shin-Mo Kang"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007HHuxQAG"|"cornellc@cadence.com"|"Sizheng Chen"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000006m8kcQAA"|"matveev@cadence.com"|"Roman Matveev"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000004B7D2AAK"|"alexl@cadence.com"|"Alex Lee"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3caAAC"|"snethent@cadence.com"|"Tom Snethen"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T419AAC"|"joels@cadence.com"|"Joel Steelman"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008YkcvAAC"|"augustin@cadence.com"|"Augustine Abraham"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000007xXU1AAM"|"sychoi@cadence.com"|"Seo-Yeong Choi"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000007xk9LAAQ"|"roylee@cadence.com"|"Roy Lee"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T31cAAC"|"tfujio@cadence.com"|"Takeshi Fujio"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000005INv4AAG"|"aneeshk@cadence.com"|"Aneesh M K"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008nFz5AAE"|"ppradeep@cadence.com"|"Padmanabhan Pradeep"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000007xXu9AAE"|"mgawas@cadence.com"|"Mandar Pandurang Gawas"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3nFAAS"|"amrik@cadence.com"|"Amrik Singh Virdi"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3KvAAK"|"meguro@cadence.com"|"Norihiko Meguro"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007PeERQA0"|"wentao@cadence.com"|"Wentao Dai"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000006LRFuQAO"|"awadaska@cadence.com"|"Anand Vivek Wadaskar"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008mvczAAA"|"lavanyar@cadence.com"|"Lavanya R"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007OAQzQAO"|"schackow@cadence.com"|"Alexander Schackow"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000002LCthAAG"|"peruri@cadence.com"|"Vijay Peruri"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3tHAAS"|"bhupendr@cadence.com"|"Bhupendra Vishwakarma"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001nc3CAAQ"|"sarathjk@cadence.com"|"Sarath Kirihennedige"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000006LAPxQAO"|"sgoswami@cadence.com"|"Shailesh Sharad Goswami"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000007xJfKAAU"|"jaewook@cadence.com"|"Jae Lee"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w0000095kTaAAI"|"hirshimi@cadence.com"|"Hiroyoshi Shimizu"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000006VrIoQAK"|"mylesp@cadence.com"|"Myles Prather"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w0000095kSDAAY"|"dishii@cadence.com"|"Daishi Ishii"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000006LHC2QAO"|"samidura@cadence.com"|"Samidurai :"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008Ixj4AAC"|"xinfang@cadence.com"|"Xin Fang"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V0000077XuFQAU"|"yashodha@cadence.com"|"Yashodhara Tarey"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3B2AAK"|"ascott@cadence.com"|"Andrew Scott"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007zxNPQAY"|"shyama@cadence.com"|"Shyam Sundar Arivazhagan"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T457AAC"|"itoigawa@cadence.com"|"Masayasu Itoigawa"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w0000098z5yAAA"|"supriano@cadence.com"|"Jose Supriano Machado Martins"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000006LRHCQA4"|"awagh@cadence.com"|"Abhishek Balasaheb Wagh"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000002LOazAAG"|"dkolarik@cadence.com"|"Don Kolarik"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000003Vc44AAC"|"lavanyan@cadence.com"|"Nimmagadda Lavanya"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007QRNXQA4"|"amals@cadence.com"|"Amal Salah"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000003UZX6AAO"|"jvinod@cadence.com"|"M J Vinod Kumar"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008Joe2AAC"|"bennyh@cadence.com"|"Benny Haddad"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000007xXULAA2"|"sijinl@cadence.com"|"Sijin Lee"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V0000077irCQAQ"|"rpatil@cadence.com"|"Ramesh Patil"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001naR7AAI"|"sorabh@cadence.com"|"Sorabh Sachdeva"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008J3xqAAC"|"nchoksi@cadence.com"|"Niket Choksi"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007dLAJQA2"|"pallavid@cadence.com"|"Pallavi Dulloo"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008ZqlHAAS"|"jtygert@cadence.com"|"Joshua Tygert"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000005ISGHAA4"|"yashua@cadence.com"|"Yashu A Varshney"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000007xXUQAA2"|"mincheol@cadence.com"|"Min-Cheol Son"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007HNBeQAO"|"jjitendr@cadence.com"|"Jitendra Rajendra Jain"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w0000095QUOAA2"|"niago@cadence.com"|"Niago Leite"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V0000077ZpHQAU"|"tkeerthu@cadence.com"|"Keerthana T"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000002qC3FAAU"|"dmurray@cadence.com"|"Dan Murray"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T31gAAC"|"ricks@cadence.com"|"Rick Sanborn"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T49tAAC"|"ysanthos@cadence.com"|"Santhosh Kumar Y."|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d000000358kqAAA"|"danqing@cadence.com"|"DQ Hua"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000007xAiyAAE"|"mureshrj@cadence.com"|"Muresh Raaj"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007PP0FQAW"|"gshanmug@cadence.com"|"Gowry Sankar"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008JTTcAAO"|"rajes@cadence.com"|"Rajesh :"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000006LLKUQA4"|"yuel@cadence.com"|"Daniel Li"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V0000077WWHQA2"|"yuxi@cadence.com"|"Yuxi Wang"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000009QEwmAAG"|"bnagendr@cadence.com"|"B Nagendra"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008k7tUAAQ"|"vagdhale@cadence.com"|"Shiva Kumar B V"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000002nPuTAAU"|"cyfan@cadence.com"|"Changyou Fan"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000002KQQ2AAO"|"jameskim@cadence.com"|"James Kim"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007QncPQAS"|"kpomal@cadence.com"|"Kumar Pomal"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3duAAC"|"aleuciuc@cadence.com"|"Adrian Leuciuc"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T30xAAC"|"cli@cadence.com"|"Chun Li"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007bfKoQAI"|"anikett1@cadence.com"|"Aniket Tushar Chaudhari"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000003VZc6AAG"|"karg@cadence.com"|"Markus Karg"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000002pkZwAAI"|"vipulr@cadence.com"|"Vipul Rastogi"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3KcAAK"|"yiwa@cadence.com"|"Yuichi Iwashita"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008Zd8lAAC"|"abhilashg@cadence.com"|"Abhilash Goundi"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000004CnDKAA0"|"deepakm@cadence.com"|"Deepak Manakkadan"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3N8AAK"|"bharris@cadence.com"|"Brian Harrison"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w0000098PsfAAE"|"otavio@cadence.com"|"Otavio Andrade"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V0000077ViHQAU"|"rishabhk@cadence.com"|"Rishabh  Kumar Gupt"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008a7IWAAY"|"ancykm@cadence.com"|"Ancy K M"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008aG0lAAE"|"ravikum1@cadence.com"|"Ravi Kumar Gupta"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008aFWvAAM"|"apeksha@cadence.com"|"Apeksha Sopan Nalawade"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000004CODnAAO"|"mingyang@cadence.com"|"Mingyang Zhu"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d00000035bJuAAI"|"dibyendu@cadence.com"|"Dibyendu Goswami"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008XUquAAG"|"saumya@cadence.com"|"Saumya Sridhar"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008bO1AAAU"|"baoguang@cadence.com"|"Ella Yan"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T4TMAA0"|"dmasters@cadence.com"|"Dave Masters"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V0000077bwZQAQ"|"saisha@cadence.com"|"Saisha Amar Asolkar"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000006LMyzQAG"|"mehdi@cadence.com"|"Mehdi Shahbazi"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007RMQJQA4"|"joons@cadence.com"|"Joon Yoon"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007OAiAQAW"|"sidhantb@cadence.com"|"Sidhant Bhattacharyya"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008bAVGAA2"|"komarraj@cadence.com"|"Bharadwaj Komarraju"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008Y74VAAS"|"ssuhas@cadence.com"|"Suhas Subhaschandra"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000002M5bUAAS"|"peichler@cadence.com"|"Pawel Eichler"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3gRAAS"|"per@cadence.com"|"Per Edstrom"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007PiyxQAC"|"syamalar@cadence.com"|"Syamala R Krishna Reddy"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000006WAMuQAO"|"hxiao@cadence.com"|"Hugh Xiao"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w0000096lT9AAI"|"shettyd@cadence.com"|"Deepak B Shetty"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008Kd5NAAS"|"stevem@cadence.com"|"Steve Mullinnix"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000006LRG4QAO"|"sbhagwat@cadence.com"|"Sameer Bhagwat"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3K8AAK"|"boyce@cadence.com"|"Kevin Boyce"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007PrArQAK"|"aditya2@cadence.com"|"Aditya Tiwari"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008Jw76AAC"|"brandond@cadence.com"|"Brandon Donohue"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000002KfPIAA0"|"kalantri@cadence.com"|"Kalantri Nilesh Narendra"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w0000097C2yAAE"|"ranbir@cadence.com"|"Ranbir Singh"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007Hbq7QAC"|"cshim@cadence.com"|"Chan-Gi Shim"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008bCNTAA2"|"lisamari@cadence.com"|"Lisa Maria Varghese"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000002LWRwAAO"|"vivekar@cadence.com"|"Vivek A"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007HYUmQAO"|"aswinr@cadence.com"|"Aswin R Mohan"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w0000095hbMAAQ"|"yuktha@cadence.com"|"Yuktha C"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000006W2BZQA0"|"jranpura@cadence.com"|"Ranpura Jainikkumar Pravinchandra"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w0000098jJzAAI"|"pruthvi@cadence.com"|"Pruthvi Kumsi Sreedhar"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008YGlnAAG"|"adityach@cadence.com"|"Aditya Chaudhary"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T951AAC"|"mjankaus@cadence.com"|"Michael Jankauski"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3dyAAC"|"nandini@cadence.com"|"Nandini Chintala"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008aVByAAM"|"sifa@cadence.com"|"Sifa Modan"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008IpRHAA0"|"shobhana@cadence.com"|"Shobhana PB"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008mxXhAAI"|"harishb@cadence.com"|"Harish Boddapat"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T97aAAC"|"bahadir@cadence.com"|"Bahadir Erimli"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007dTUHQA2"|"snirb@cadence.com"|"Snir Bouchnik"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w0000099D20AAE"|"anirudhk@cadence.com"|"Kasturi Hanuma Sai Anirudh"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008ZVn7AAG"|"chaoj@cadence.com"|"Chao Jiang"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d000000345I8AAI"|"odom@cadence.com"|"Odom Serey"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000002p1J6AAI"|"poonamk@cadence.com"|"Poonam Khatri"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000002oLe4AAE"|"radha@cadence.com"|"Radha Nagaraju"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008Yz7nAAC"|"nengxuew@cadence.com"|"Nengxue Wang"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000006LfhYQAS"|"omangm@cadence.com"|"Omang Mahure"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000004i7mMAAQ"|"bnavathe@cadence.com"|"Bilva Navathe"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008kU93AAE"|"bhalerao@cadence.com"|"Abhishek Laxmikant Bhalerao"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008ZBiCAAW"|"datesman@cadence.com"|"Adam Datesman"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3BXAA0"|"tpylant@cadence.com"|"Tim Pylant"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T464AAC"|"ericc@cadence.com"|"Eric Colaco"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008XeiWAAS"|"marciaf@cadence.com"|"Marcia Federizzi"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T35GAAS"|"jyork@cadence.com"|"Jeff York"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000007xEXpAAM"|"saim@cadence.com"|"Munaga Sesha Sai"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T5WuAAK"|"bzanwar@cadence.com"|"Badrinarayan Zanwar"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000006W0quQAC"|"vijayanr@cadence.com"|"Vijayan Ramesh"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008XeJ2AAK"|"pkanimet@cadence.com"|"Pradeep Kumar Kanimetla"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007CrxdQAC"|"pbasu@cadence.com"|"Parijat Basu"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d00000048xqzAAA"|"deepakj@cadence.com"|"Deepak Jagannath"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008JokjAAC"|"rapelo@cadence.com"|"Juha Rapelo"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T5U9AAK"|"avarma@cadence.com"|"Anup Varma"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007dv6hQAA"|"cbabu79@cadence.com"|"Annamaneni Chittibabu"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000003T3uIAAS"|"bhuynh@cadence.com"|"Brian Huynh"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d00000049ldNAAQ"|"hardikd@cadence.com"|"Hardik Doshi"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T5MMAA0"|"meade@cadence.com"|"Kathleen Meade"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3wNAAS"|"megu@cadence.com"|"Meg Enokido"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000006LDDzQAO"|"lokeshs@cadence.com"|"Lokesh Soni"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000008L841QAC"|"sudipta@cadence.com"|"Sudipta Sarkar"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T5RPAA0"|"anuradha@cadence.com"|"Anuradha Mani"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3m8AAC"|"tbeirnae@cadence.com"|"Thierry Beirnaert"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T4WQAA0"|"flavien@cadence.com"|"Flavien Herman"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001pZsKAAU"|"jdelage@cadence.com"|"Jean-Francois Delage"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T5YWAA0"|"mjlai@cadence.com"|"MJ Lai"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007IWBuQAO"|"ymutha@cadence.com"|"Yatin Mohanlal Mutha"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3R0AAK"|"ito@cadence.com"|"Nobuhide Ito"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w0000098XIfAAM"|"suresh2@cadence.com"|"Suresh M"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001pL8tAAE"|"rrawani@cadence.com"|"Ranjit Kumar Rawani"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000004iDxkAAE"|"pramodm@cadence.com"|"Pramod Kumar ML"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008ZIx9AAG"|"cseok@cadence.com"|"Chunkyun Seok"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000007xXUBAA2"|"dilee@cadence.com"|"Dong-Ik Lee"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T61HAAS"|"patdoss@cadence.com"|"Patrick Dos Santos"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000004A7ipAAC"|"abhijitm@cadence.com"|"Abhijit Madhu Kumar"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000004hQgXAAU"|"dsathish@cadence.com"|"Sathish D"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000009Q4wwAAC"|"yingl@cadence.com"|"Ying Li"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001pZs8AAE"|"gfortin@cadence.com"|"Guillaume Fortin"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008XwQLAA0"|"jgmourao@cadence.com"|"Joao Guilherme Mourao Melo"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000005I5qsAAC"|"bhartid@cadence.com"|"Bharti Dadhich"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008Jo86AAC"|"shalvip@cadence.com"|"Shalvi Patel"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000004ifjMAAQ"|"manjits@cadence.com"|"Manjit Shetty"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007HVD4QAO"|"mehran@cadence.com"|"Mehran Mohammadi Izad"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000003WK6PAAW"|"greddy@cadence.com"|"Gangadhara C"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000003V5vwAAC"|"gneeraj@cadence.com"|"Neeraj Giri"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000003VeYHAA0"|"kirant@cadence.com"|"Kiran Pani Thota"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008Zxh7AAC"|"tshinde@cadence.com"|"Tejas Vaibhav Shinde"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007RhK7QAK"|"cdustker@cadence.com"|"Chaitra Dustker"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008kJqQAAU"|"knithin@cadence.com"|"Nithin Krishnan"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000004CbsLAAS"|"sgugwad@cadence.com"|"Sachin Gugwad"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007HJkGQAW"|"mbhushan@cadence.com"|"Naga Bhushanam Machupalli"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000007xFb4AAE"|"winstonk@cadence.com"|"Winston Kuo"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007QChhQAG"|"msundare@cadence.com"|"Meenakshi S"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008ZKYaAAO"|"akhilap@cadence.com"|"Akhila Purushothaman"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008oAGCAA2"|"colayare@cadence.com"|"Carlos Roger Reyes"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007RXLoQAO"|"sramasam@cadence.com"|"Suresh Ramasamy"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000009Q6K6AAK"|"yosung@cadence.com"|"Yosung Jung"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V0000077XuAQAU"|"pneelesh@cadence.com"|"Neelesh Kumar Patel"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d00000043xp6AAA"|"krvinay@cadence.com"|"Vinay Krishnan"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008nR1bAAE"|"karuna@cadence.com"|"Karuna Doomra"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000003T8XrAAK"|"deepa@cadence.com"|"Deepa Magge Sampathu"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3DmAAK"|"ric@cadence.com"|"Riccardo Oddone"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008XwyhAAC"|"stevenm@cadence.com"|"Steven Mikes"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T4L1AAK"|"sawada@cadence.com"|"Takeshi Sawada"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008KclmAAC"|"sanjita@cadence.com"|"Sanjita Chokshi"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T4SyAAK"|"ghpark@cadence.com"|"Gil-Ho Park"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000005IIpBAAW"|"amandeep@cadence.com"|"Amandeep Singh"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007d0UwQAI"|"spassi@cadence.com"|"Shubhangi Passi"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007QKVFQA4"|"adarshs@cadence.com"|"Adarsh Boovaraghamurthy Srinivasan"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T4OHAA0"|"petracca@cadence.com"|"Michele Petracca"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w00000962hVAAQ"|"ambatitk@cadence.com"|"Ambati Tharun Kumar"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000006F6SQAA0"|"wusheng@cadence.com"|"Sheng Wu"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000002KQPYAA4"|"gefland@cadence.com"|"Greg Efland"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3p3AAC"|"kazufumi@cadence.com"|"Kazufumi Watanabe"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3ySAAS"|"juha@cadence.com"|"Juha Virtanen"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d000000374TvAAI"|"dobashi@cadence.com"|"Nobuyuki Dobashi"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000002LWS2AAO"|"avinashj@cadence.com"|"Avinash John"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000006F3CmAAK"|"svishal@cadence.com"|"Savsani Vishal Narbheram"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T5hTAAS"|"vivekc@cadence.com"|"Vivek Chickermane"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000006mDTMQA2"|"dlangen@cadence.com"|"Dominik Langen"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000007xiIVAAY"|"thiagom@cadence.com"|"Thiago de Moura Salles Moreira"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d00000035NB4AAM"|"ncurley@cadence.com"|"Nick Curley"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000003TKkJAAW"|"malavika@cadence.com"|"Malavika Krishna"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001Ta44AAC"|"vishesh@cadence.com"|"Vishesh Kumar"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007QPsOQAW"|"lgrover@cadence.com"|"Lakshay Grover"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001nZk5AAE"|"stvwang@cadence.com"|"Steve Wang"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007SHHJQA4"|"mkarthik@cadence.com"|"Karthikeyan Manickam"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3FwAAK"|"obadel@cadence.com"|"Olivier Badel"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000006EoyUAAS"|"rakeshs@cadence.com"|"Rakesh Kumar Singh"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d00000043ZINAA2"|"aritra@cadence.com"|"Aritra Bhattacharjee"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000006W0kxQAC"|"karthikn@cadence.com"|"Karthik Nanjundiah"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T4PJAA0"|"guibao@cadence.com"|"Guibao Jin"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T97vAAC"|"shrutip@cadence.com"|"Sruthi Penikalapati"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w0000098mOxAAI"|"pavansp@cadence.com"|"Pavan Pavan Sagare Prakash"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000007xAeSAAU"|"chankyu@cadence.com"|"Chan-Kyu Lee"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T4H3AAK"|"rashmi@cadence.com"|"Rashmi Vashistha"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008aEJ7AAM"|"shimizu@cadence.com"|"Masahisa Shimizu"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T5YPAA0"|"bvijay@cadence.com"|"Vijay Kumar Birange"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000006L7V4QAK"|"shoaib@cadence.com"|"Mohammed Shoaib"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000006mBbEQAU"|"apoorvaa@cadence.com"|"Apoorva Amdapurkar"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008alAIAAY"|"shrinm@cadence.com"|"Shrikrishna Nana Mehetre"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V0000077U25QAE"|"jmajhi@cadence.com"|"Jayesh Ranjan Majhi"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T381AAC"|"ashishm@cadence.com"|"Ashish Mathur"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000006LTHnQAO"|"shaswati@cadence.com"|"Shaswati De"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T4O0AAK"|"tatuskar@cadence.com"|"Gnaneshwara Tatuskar"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T5bBAAS"|"madanr@cadence.com"|"Madan Rachaprolu"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w0000098rYOAAY"|"takyung@cadence.com"|"Takyung Kim"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001TV6PAAW"|"pbaddam@cadence.com"|"Prashanth G Baddam"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001UnfNAAS"|"kspark@cadence.com"|"Kyung-Suk Park"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000003SnghAAC"|"pasc@cadence.com"|"Pasupathi C"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000005pZm0AAE"|"prayesj@cadence.com"|"Prayes Jain"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007QAKWQA4"|"mzameer@cadence.com"|"Mohammad Suheb Zameer"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d00000037OysAAE"|"martinp@cadence.com"|"Martin Phipps"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3aSAAS"|"bobbyn@cadence.com"|"Bobby Nishida"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008JodiAAC"|"yjoh@cadence.com"|"Alex Oh"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000004hOr3AAE"|"sraghava@cadence.com"|"Srinivas Raghavan"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007I4IdQAK"|"shuqin@cadence.com"|"Shuqin Weng"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3oVAAS"|"kkarthik@cadence.com"|"Karthik Kandasamy"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007HKe4QAG"|"muralir@cadence.com"|"Murali Rajagopalan"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000005ILhsAAG"|"shchen@cadence.com"|"Snow Chen"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000006L0agQAC"|"naveenbh@cadence.com"|"Venneti Naveen Bharadwaj"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001nbSrAAI"|"kenr@cadence.com"|"Ken Reagle"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001nZnsAAE"|"quoc@cadence.com"|"Quoc Luu"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000005nVfoAAE"|"hartman@cadence.com"|"Michael Hartman"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3ERAA0"|"farrell@cadence.com"|"Patrick Farrell"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008XX5IAAW"|"tayang@cadence.com"|"Ta-Yang Huang"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000007xJzyAAE"|"klokaj@cadence.com"|"Krzysztof Lokaj"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V0000077WXAQA2"|"dvenkate@cadence.com"|"Venkatesan Devendiran"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000004hA9eAAE"|"aruna@cadence.com"|"Aruna Aluri"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T4KkAAK"|"jagjot@cadence.com"|"Jagjot Kaur"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007HPjOQAW"|"lucas@cadence.com"|"Lucas Chaves"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3TTAA0"|"jjeffrey@cadence.com"|"Jeff Johnson"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008a1gXAAQ"|"ppatil@cadence.com"|"Priyanka Patil"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3sCAAS"|"kaurt@cadence.com"|"Tarvinder Kaur"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000006F6SNAA0"|"govindn@cadence.com"|"Govind Nair"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w0000095kTuAAI"|"jjia@cadence.com"|"Jane Jia"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008b9ztAAA"|"sumanb@cadence.com"|"Bavandla Suman Kumar"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V0000080DGFQA2"|"vkiran@cadence.com"|"Visarapu Venkata Surya Santosh Ravi Kiran"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007PgVPQA0"|"deepthid@cadence.com"|"Deepthi Dinesh Bekal"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007R8maQAC"|"rkvenkat@cadence.com"|"RK Pinnavasal Venkatasubramanian"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3rWAAS"|"jfales@cadence.com"|"Jonathan Fales"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000004A3jJAAS"|"nasu@cadence.com"|"Kouki Nasu"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w0000097llUAAQ"|"liyue@cadence.com"|"Yue Li"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000003UKjxAAG"|"hkrishna@cadence.com"|"Hari Krishnamoorthy"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008nPiOAAU"|"sylvainc@cadence.com"|"Sylvain Charasse"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000002LWSYAA4"|"eshwar@cadence.com"|"Eshwar Ibrahimpur"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000006W88bQAC"|"spandana@cadence.com"|"Yarlagadda Bala Spandana"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008ZrkFAAS"|"gopika@cadence.com"|"Pamarthy Gopika Rani Alekhya"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000004CnjfAAC"|"iiyama@cadence.com"|"Kouhei Iiyama"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000007xg42AAA"|"dlpan@cadence.com"|"Daniel Pan"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007HEI7QAO"|"alann@cadence.com"|"Alan Neumann"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000002M5bDAAS"|"ploska@cadence.com"|"Pawel Loska"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007S4xlQAC"|"hamada@cadence.com"|"Yutaka Hamada"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T5dbAAC"|"hverma@cadence.com"|"Harish Verma"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w0000098uoeAAA"|"tanyag@cadence.com"|"Tanya Gaurav"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008ZdMnAAK"|"kimjs@cadence.com"|"Jeong Seop Kim"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007CpLNQA0"|"rdilip@cadence.com"|"Dilip R"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000006Ldv4QAC"|"pankajsi@cadence.com"|"Pankaj Singh"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008JTThAAO"|"manishap@cadence.com"|"Manisha Pradhan"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3oIAAS"|"lhtung@cadence.com"|"Li-Hung Tung"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008YxUfAAK"|"hdeshmuk@cadence.com"|"Harshwardhan Santosh Deshmukh"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000006F7f9AAC"|"ankitr@cadence.com"|"Ankit B"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007cdbkQAA"|"priyansh@cadence.com"|"Priyanshi Shukla"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000006m6ywQAA"|"nivedith@cadence.com"|"Niveditha N Kamath"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T5RGAA0"|"kmchow@cadence.com"|"Charles Chow"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000004gJ5vAAE"|"joej@cadence.com"|"Joe Jacob"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T4VXAA0"|"fumihiko@cadence.com"|"Fumihiko Noguchi"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w0000098xcCAAQ"|"bgiri@cadence.com"|"B Giri Babu"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3B6AAK"|"ssm@cadence.com"|"Scott McLaughlin"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008bAIlAAM"|"swetha1@cadence.com"|"Swetha Sivadas"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d000000449tNAAQ"|"jmerced@cadence.com"|"Joey dela Merced"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000002LWSzAAO"|"jijopaul@cadence.com"|"Jijo Paul"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000007xkImAAI"|"pratuln@cadence.com"|"Pratul Nijhawan"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007HJWnQAO"|"nmathai@cadence.com"|"Nissy Sara Mathai"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000004iGA8AAM"|"rprakash@cadence.com"|"prakash BS"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007RhSGQA0"|"palak@cadence.com"|"Palak Digvadekar"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000006LCCMQA4"|"aida@cadence.com"|"Aida Varzaghani"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T5ycAAC"|"gajay@cadence.com"|"Ajay Goyal"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008beMJAAY"|"lkkim@cadence.com"|"Kil-Soo Kim"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w0000097llKAAQ"|"gsyal@cadence.com"|"Gaurav Syal"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008lt3lAAA"|"mkrishna@cadence.com"|"Murarisetty Sai Krishna"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000002ofq0AAA"|"avinashm@cadence.com"|"Avinash Kumar Mishra"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000004i8WDAAY"|"balbeer@cadence.com"|"Balbeer Rathor"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008JyGtAAK"|"sanya@cadence.com"|"Sanya Gupta"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d00000049KmIAAU"|"rauhut@cadence.com"|"Anthony Rauhut"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000002LzxYAAS"|"nehaj@cadence.com"|"Neha Joshi"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w0000098WyVAAU"|"owen@cadence.com"|"Owen Sturzebecher"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000007y6f9AAA"|"patilabh@cadence.com"|"Abhishek Patil"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T4D0AAK"|"arindamg@cadence.com"|"Arindam Guha"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000002LWRGAA4"|"dinup@cadence.com"|"Dinu P Sankar"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T3pOAAS"|"hannes@cadence.com"|"Hannes Froehlich"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008Jn5GAAS"|"tongtong@cadence.com"|"Tongtong Lyu"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000006LCCqQAO"|"louisc@cadence.com"|"Joe Louis-Chandran"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000003T8XTAA0"|"skhaikin@cadence.com"|"Sergey Khaikin"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V0000077ZynQAE"|"vborade@cadence.com"|"Vaishali Borade"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000006LRFzQAO"|"domkar@cadence.com"|"Doppalapudi Omkar"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000006LC0zQAG"|"nitesha@cadence.com"|"Nitesh Agarwal"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008k6LFAAY"|"padmini@cadence.com"|"Padmini Vijay Anand"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000005nDdZAAU"|"gayar@cadence.com"|"Gayathri R"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000002LnYLAA0"|"wliu@cadence.com"|"Wei Liu"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w0000098nmvAAA"|"psrujana@cadence.com"|"Potula Srujana"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000006LJ9oQAG"|"nidhij@cadence.com"|"Nidhi Jain"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T4U2AAK"|"anshuls@cadence.com"|"Anshul Singhal"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000008Kr4sAAC"|"anilks@cadence.com"|"Anil Kumar Sharma"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V000007HPYkQAO"|"mmarques@cadence.com"|"Mariana Ferreira Marques"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0050V0000077XqNQAU"|"anirudhd@cadence.com"|"Anirudh Digumarthi"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000002nMP6AAM"|"rishik@cadence.com"|"Rishi Kumar"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"0053w000007xSRqAAM"|"merin@cadence.com"|"Merin Mary Meyn"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000006VmAfAAK"|"kavithaa@cadence.com"|"Kavitha Ashok"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000004hrcrAAA"|"sampatha@cadence.com"|"Sampath Kumar Adepu"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d0000001T5PFAA0"|"elim@cadence.com"|"Ed Lim"|"00e3w000002Nh0pAAC"|"4_4 - Apttus Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+"005d00000036NnmAAE"|"leiyang@cadence.com"|"Lei Yang"|"00e3w000002Nh0kAAC"|"Cadence General User Lightning"|"LIGHTNING"|"Not Breached"|"NOT Breached"
+
+1022 rows selected.
+
+W_CONT=1
+No Alert
+wcoratstdbl02:sfmon:/usr/orasys/work/jsaini/LIGHTNING_2021>
